@@ -1391,6 +1391,256 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   }
 }
 
+/* ==========================================================================
+   FASE 8 — REFINAMENTO TIPOGRÁFICO, RESPIROS EDITORIAIS, PRÓXIMO PASSO E RODAPÉ
+   ========================================================================== */
+
+/* 1. Padronização Global de Fontes Secundárias (Estilo Anexo) */
+.font-mono, .font-mono-tech, .meta-label-tech {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-feature-settings: "zero", "tnum";
+  font-variant-numeric: tabular-nums slashed-zero;
+  text-rendering: optimizeLegibility;
+}
+
+.tracking-tech, .meta-label-tech {
+  letter-spacing: 0.24em !important;
+  text-transform: uppercase;
+}
+
+.font-mono.tracking-tech-wide {
+  letter-spacing: 0.24em !important;
+  text-transform: uppercase;
+}
+
+/* 2. Respiro / Margem Superior de "Sobre a Capibaribe" (#sobre) */
+.sobre-fullscreen-section {
+  padding-top: 6.5rem !important;
+  padding-bottom: 5.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .sobre-fullscreen-section {
+    padding-top: 8.5rem !important;
+    padding-bottom: 7rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sobre-fullscreen-section {
+    padding-top: 10.5rem !important;
+    padding-bottom: 8.5rem !important;
+  }
+}
+
+/* 3. Respiro Editorial entre Título e Imagens em "Insights & Análises" (#insights) */
+.insights-header-refined {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .insights-header-refined {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 4.75rem !important;
+  }
+}
+
+/* 4. Redesenho de "PRÓXIMO PASSO" (CTA Final) */
+.cta-nextstep-section {
+  position: relative;
+  background-color: #070D18;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6.5rem 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cta-nextstep-section {
+    padding: 9rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cta-nextstep-section {
+    padding: 11rem 0;
+  }
+}
+
+.cta-nextstep-bg-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(21, 151, 147, 0.16) 0%, rgba(7, 13, 24, 0) 70%);
+  pointer-events: none;
+}
+
+.cta-nextstep-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: radial-gradient(circle at 50% 50%, #159793 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.cta-pillar-card {
+  background: rgba(15, 26, 46, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-pillar-card:hover {
+  background: rgba(18, 32, 56, 0.85);
+  border-color: rgba(21, 151, 147, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(21, 151, 147, 0.2);
+}
+
+.cta-pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(21, 151, 147, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-pillar-card:hover::before {
+  opacity: 1;
+}
+
+.cta-telemetry-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  max-width: fit-content;
+  margin: 3.5rem auto 0 auto;
+}
+
+@media (min-width: 640px) {
+  .cta-telemetry-bar {
+    border-radius: 9999px;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* 5. Redesenho do RODAPÉ (Footer) */
+.footer-executive {
+  position: relative;
+  background-color: #040810;
+  color: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.footer-ambient-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 220px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(21, 151, 147, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-top-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #159793;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-link-item {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.92rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-link-item:hover {
+  color: #159793;
+  transform: translateX(3px);
+}
+
+.footer-social-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.25s ease;
+}
+
+.footer-social-btn:hover {
+  background: #159793;
+  border-color: #159793;
+  color: #070D18;
+  transform: translateY(-2px);
+}
+
+.footer-bottom-legal {
+  margin-top: 4.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 768px) {
+  .footer-bottom-legal {
+    flex-direction: row;
+  }
+}
+
+
 
 
 

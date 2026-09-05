@@ -823,7 +823,7 @@ return p.jsxs(p.Fragment, {
   ]
 });
 }function Lj({color:e="#2ABBA7",className:t="",flip:n=!1,opacity:r=.2}){return p.jsx("div",{className:`w-full overflow-hidden ${n?"rotate-180":""} ${t}`,"aria-hidden":"true",children:p.jsxs("svg",{viewBox:"0 0 1440 80",preserveAspectRatio:"none",className:"w-full h-[40px] md:h-[60px]",fill:"none",children:[p.jsx("path",{d:"M0 78 C360 10 1080 10 1440 78",stroke:e,strokeWidth:"1.5",strokeOpacity:r,strokeLinecap:"round"}),p.jsx("path",{d:"M0 78 C360 22 1080 22 1440 78",stroke:e,strokeWidth:"1",strokeOpacity:r*.5,strokeLinecap:"round"}),[120,300,480,660,840,1020,1200,1320].map((i,a)=>{const o=i/1440,s=78*(1-4*o*(1-o))*.92;return p.jsx("line",{x1:i,y1:s,x2:i,y2:78,stroke:e,strokeWidth:"0.6",strokeOpacity:r*.4},a)}),p.jsx("line",{x1:"0",y1:"78",x2:"1440",y2:"78",stroke:e,strokeWidth:"2",strokeOpacity:r*1.2,strokeLinecap:"round"})]})})};
-function Hoe(){return p.jsxs("footer",{className:"relative bg-brand-ink text-white overflow-hidden",children:[p.jsx("div",{className:"absolute inset-0 opacity-[0.04]",style:{backgroundImage:"radial-gradient(circle at 20% 0%, #2ABBA7 0, transparent 50%)"}}),p.jsx(Lj,{color:"#2ABBA7",opacity:.25,className:"absolute top-0"}),p.jsxs("div",{className:"relative max-w-7xl mx-auto px-4 md:px-8 pt-20 pb-10",children:[p.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8",children:[p.jsxs("div",{className:"md:col-span-5",children:[p.jsx(Zy,{variant:"light"}),p.jsxs("div",{className:"mt-5 space-y-2 max-w-sm",children:[p.jsx("p",{className:"text-brand-teal font-heading font-bold text-base tracking-wide",children:"Paixão por fazer mais e inteligência para fazer certo."}),p.jsx("p",{className:"text-white/80 text-[0.95rem] leading-relaxed font-medium",children:"Desenvolvendo o Norte e Nordeste do Brasil."}),p.jsx("p",{className:"text-white/50 text-xs leading-relaxed pt-1",children:"Inteligência econômica, estruturação financeira, consultoria tributária e fomento para empresas, investidores e setor público."})]}),p.jsxs("div",{className:"flex items-center gap-3 mt-6",children:[p.jsx("a",{href:er.social.linkedin,target:"_blank",rel:"noopener noreferrer","aria-label":"LinkedIn",className:"w-10 h-10 rounded-lg border border-white/15 flex items-center justify-center text-white/70 hover:bg-brand-teal hover:text-brand-navy hover:border-brand-teal transition-colors",children:p.jsx(VG,{className:"w-4.5 h-4.5"})}),p.jsx("a",{href:er.social.instagram,target:"_blank",rel:"noopener noreferrer","aria-label":"Instagram",className:"w-10 h-10 rounded-lg border border-white/15 flex items-center justify-center text-white/70 hover:bg-brand-teal hover:text-brand-navy hover:border-brand-teal transition-colors",children:p.jsx(q_,{className:"w-4.5 h-4.5"})})]})]}),p.jsxs("div",{className:"md:col-span-3",children:[p.jsx("h4",{className:"font-mono-tech text-xs uppercase tracking-[0.2em] text-brand-teal mb-4",children:"Navegação"}),p.jsx("ul",{className:"space-y-3",children:[{label:"Serviços",href:"/servicos"},{label:"Assessoria Financeira",href:"/servicos#assessoria-financeira"},{label:"Consultoria Tributária",href:"/servicos#consultoria-tributaria"},{label:"Estudos Econômicos e Sociais",href:"/servicos#estudos-economicos"},{label:"Blog Técnico",href:"/blog"}].map(e=>p.jsx("li",{children:p.jsxs(Mt,{to:e.href,className:"text-white/65 hover:text-brand-teal transition-colors text-[0.95rem] inline-flex items-center gap-1 group",children:[e.label,p.jsx(XK,{className:"w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity"})]})},e.href))})]}),p.jsxs("div",{className:"md:col-span-4",children:[p.jsx("h4",{className:"font-mono-tech text-xs uppercase tracking-[0.2em] text-brand-teal mb-4",children:"Contato"}),p.jsxs("ul",{className:"space-y-3 text-[0.95rem]",children:[p.jsxs("li",{className:"flex items-start gap-3 text-white/65",children:[p.jsx(kA,{className:"w-4.5 h-4.5 text-brand-teal shrink-0 mt-0.5"}),p.jsx("span",{children:er.address})]}),p.jsx("li",{children:p.jsxs("a",{href:er.phoneHref,className:"flex items-start gap-3 text-white/65 hover:text-brand-teal transition-colors",children:[p.jsx(q3,{className:"w-4.5 h-4.5 text-brand-teal shrink-0 mt-0.5"}),p.jsx("span",{children:er.phone})]})}),p.jsx("li",{children:p.jsxs("a",{href:`mailto:${er.email}`,className:"flex items-start gap-3 text-white/65 hover:text-brand-teal transition-colors",children:[p.jsx(sl,{className:"w-4.5 h-4.5 text-brand-teal shrink-0 mt-0.5"}),p.jsx("span",{children:er.email})]})})]}),p.jsx(Mt,{to:"/contato",className:"mt-5 inline-flex items-center gap-2 bg-brand-teal text-brand-navy font-semibold text-sm px-4 py-2.5 rounded-lg hover:bg-brand-teal-light transition-colors",children:"Agendar Diagnóstico"})]})]}),p.jsxs("div",{className:"mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40",children:[p.jsx("p",{children:"© 2026 Capibaribe Consultoria. Todos os direitos reservados. · Design & Tecnologia por AR Mídias Integradas"}),p.jsx("p",{className:"font-mono-tech",children:"Recife · Pernambuco · Brasil"})]})]})]})}const JR=[{label:"Início",href:"/test",icon:MG},{label:"Serviços",href:"/servicos",icon:T3},{label:"Simulador",href:"/simulador",icon:N3},{label:"Glossário",href:"/glossario",icon:og}];function Koe(){const e=ua();return p.jsx("nav",{className:"md:hidden fixed bottom-0 inset-x-0 z-50 px-3 pb-3 pt-2",style:{paddingBottom:"max(0.75rem, env(safe-area-inset-bottom))"},children:p.jsxs("div",{className:"glass-dark rounded-2xl border border-white/10 shadow-2xl flex items-center justify-around px-2 py-1.5",children:[JR.slice(0,2).map(t=>{const n=e.pathname===t.href,r=t.icon;return p.jsxs(Mt,{to:t.href,className:"flex flex-col items-center gap-1 px-3 py-2 min-w-[56px]","aria-label":t.label,children:[p.jsx(r,{className:`w-5 h-5 transition-colors ${n?"text-brand-teal":"text-white/60"}`,strokeWidth:n?2.2:1.8}),p.jsx("span",{className:`text-[0.6rem] font-medium transition-colors ${n?"text-brand-teal":"text-white/55"}`,children:t.label})]},t.href)}),p.jsxs("a",{href:"https://wa.me/558140028922",target:"_blank",rel:"noopener noreferrer","aria-label":"Falar no WhatsApp",className:"flex flex-col items-center -mt-7",children:[p.jsx("span",{className:"w-14 h-14 rounded-full bg-brand-teal text-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/40 border-4 border-brand-ink",children:p.jsx(zy,{className:"w-6 h-6",strokeWidth:2.2})}),p.jsx("span",{className:"text-[0.6rem] font-semibold text-brand-teal mt-0.5",children:"WhatsApp"})]}),JR.slice(2).map(t=>{const n=e.pathname===t.href,r=t.icon;return p.jsxs(Mt,{to:t.href,className:"flex flex-col items-center gap-1 px-3 py-2 min-w-[56px]","aria-label":t.label,children:[p.jsx(r,{className:`w-5 h-5 transition-colors ${n?"text-brand-teal":"text-white/60"}`,strokeWidth:n?2.2:1.8}),p.jsx("span",{className:`text-[0.6rem] font-medium transition-colors ${n?"text-brand-teal":"text-white/55"}`,children:t.label})]},t.href)})]})})}function FloatingWhatsApp(){return p.jsxs("div",{className:"floating-whatsapp-container",children:[p.jsxs("div",{className:"floating-whatsapp-tooltip",children:[p.jsx("span",{className:"w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"}),p.jsx("span",{className:"text-white font-semibold text-xs tracking-wide whitespace-nowrap",children:"Falar com Especialista via WhatsApp"})]}),p.jsxs("a",{href:"https://wa.me/558140028922",target:"_blank",rel:"noopener noreferrer","aria-label":"Falar com a Capibaribe Consultoria no WhatsApp",className:"floating-whatsapp-trigger group",children:[p.jsx("div",{className:"floating-whatsapp-beacon"}),p.jsx("div",{className:"floating-whatsapp-status-dot"}),p.jsx(zy,{className:"w-7 h-7 text-white group-hover:scale-110 transition-transform duration-200",strokeWidth:2.2})]})]})}function Goe(){const loc=ua();const isTest=loc.pathname==="/test"||loc.pathname==="/teste";return p.jsxs("div",{className:"min-h-screen flex flex-col bg-brand-surface",children:[p.jsx(Woe,{}),p.jsx("main",{className:"flex-1",children:p.jsx(M5,{})}),p.jsx(Hoe,{}),!isTest&&p.jsx(Koe,{}),!isTest&&p.jsx("div",{className:"h-24 md:hidden","aria-hidden":"true"}),p.jsx(FloatingWhatsApp,{})]})}const Ur={heroPrivate:"images/4f7f6bf35_generated_image.png",heroPublic:"images/recife_capibaribe.jpg",aboutOffice:"images/c05510da3_generated_image.png",infrastructure:"images/7f0807607_generated_image.png",architecture:"images/a72911bb2_generated_image.png",cableDetail:"images/628e9dfe2_generated_image.png"};function Xoe(){
+function Hoe(){return p.jsxs("footer",{className:"footer-executive",children:[p.jsx("div",{className:"footer-ambient-glow"}),p.jsxs("div",{className:"relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 pt-16 md:pt-20 pb-12",children:[p.jsxs("div",{className:"footer-top-strip",children:[p.jsxs("div",{className:"flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6",children:[p.jsx(Zy,{variant:"light"}),p.jsx("div",{className:"hidden lg:block h-5 w-px bg-white/15"}),p.jsx("span",{className:"font-mono text-[0.65rem] md:text-[0.72rem] text-brand-teal uppercase tracking-[0.24em] font-medium",children:"ESTRUTURAÇÃO FINANCEIRA • INTELIGÊNCIA TRIBUTÁRIA • CAPITAL & CRESCIMENTO"})]}),p.jsxs("div",{className:"inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 font-mono text-[0.65rem] text-white/70 uppercase tracking-[0.18em]",children:[p.jsx("span",{className:"beacon-dot-green"}),"SEDE INSTITUCIONAL: RECIFE, PE"]})]}),p.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10",children:[p.jsxs("div",{className:"md:col-span-4 lg:col-span-3 space-y-4",children:[p.jsx("p",{className:"text-white/80 text-sm sm:text-base leading-relaxed font-light max-w-sm",children:"Inteligência econômica, governança de caixa e incentivos fiscais para empresas, investidores e projetos que movem a economia real."}),p.jsxs("div",{className:"pt-2 text-xs font-mono text-white/50 space-y-1.5",children:[p.jsxs("div",{className:"flex items-center gap-2",children:[p.jsx(kA,{className:"w-3.5 h-3.5 text-brand-teal shrink-0"}),p.jsx("span",{children:er.address})]}),p.jsx("div",{className:"text-white/40 pl-5 tracking-widest text-[0.65rem]",children:"COORDENADAS: 08° 03′ 14″ S / 34° 52′ 52″ W"})]}),p.jsxs("div",{className:"flex items-center gap-3 pt-3",children:[p.jsx("a",{href:er.social.linkedin,target:"_blank",rel:"noopener noreferrer","aria-label":"LinkedIn da Capibaribe Consultoria",className:"footer-social-btn",children:p.jsx(VG,{className:"w-4 h-4"})}),p.jsx("a",{href:er.social.instagram,target:"_blank",rel:"noopener noreferrer","aria-label":"Instagram da Capibaribe Consultoria",className:"footer-social-btn",children:p.jsx(q_,{className:"w-4 h-4"})})]})]}),p.jsxs("div",{className:"md:col-span-3 lg:col-span-3",children:[p.jsx("h4",{className:"footer-col-title",children:"01 // PRÁTICAS ESTRUTURAIS"}),p.jsx("ul",{className:"space-y-2.5",children:[{label:"Estruturação Financeira & FP&A",href:"/servicos#assessoria-financeira"},{label:"Consultoria Tributária 360°",href:"/servicos#consultoria-tributaria"},{label:"Incentivos SUDENE & PRODEPE",href:"/simulador"},{label:"Funding & Fomento (BNDES/BNB)",href:"/test#atuacao"},{label:"Valuation & Projetos",href:"/servicos#estudos-economicos"}].map(e=>p.jsx("li",{children:p.jsxs(Mt,{to:e.href,className:"footer-link-item",children:[p.jsx("span",{className:"text-brand-teal/60 text-xs",children:"›"}),e.label]})},e.label))})]}),p.jsxs("div",{className:"md:col-span-2 lg:col-span-2",children:[p.jsx("h4",{className:"footer-col-title",children:"02 // ECOSSISTEMA"}),p.jsx("ul",{className:"space-y-2.5",children:[{label:"Manifesto",href:"/test#manifesto"},{label:"Soluções",href:"/test#solucoes"},{label:"Método",href:"/test#metodo"},{label:"Casuística",href:"/test#cases"},{label:"Sobre a Capibaribe",href:"/test#sobre"},{label:"Insights Técnicos",href:"/test#insights"},{label:"Simulador Fiscal",href:"/simulador"},{label:"Glossário do Fomento",href:"/glossario"}].map(e=>p.jsx("li",{children:p.jsxs(Mt,{to:e.href,className:"footer-link-item",children:[p.jsx("span",{className:"text-brand-teal/60 text-xs",children:"›"}),e.label]})},e.label))})]}),p.jsxs("div",{className:"md:col-span-3 lg:col-span-4 space-y-4",children:[p.jsx("h4",{className:"footer-col-title",children:"03 // CANAL INSTITUCIONAL"}),p.jsxs("ul",{className:"space-y-3 text-sm",children:[p.jsx("li",{children:p.jsxs("a",{href:er.phoneHref,className:"flex items-center gap-2.5 text-white/70 hover:text-brand-teal transition-colors font-mono text-xs",children:[p.jsx(q3,{className:"w-4 h-4 text-brand-teal shrink-0"}),er.phone]})}),p.jsx("li",{children:p.jsxs("a",{href:`mailto:${er.email}`,className:"flex items-center gap-2 text-white/70 hover:text-brand-teal transition-colors font-mono text-[0.7rem] sm:text-xs",children:[p.jsx(sl,{className:"w-4 h-4 text-brand-teal shrink-0"}),er.email]})}),p.jsxs("li",{className:"flex items-center gap-2.5 text-white/45 font-mono text-[0.68rem]",children:[p.jsx("span",{className:"w-1.5 h-1.5 rounded-full bg-brand-teal/80"}),"Atendimento: Seg a Sex, 08h às 18h"]})]}),p.jsxs(Mt,{to:"/contato",className:"mt-4 inline-flex items-center gap-2 bg-brand-teal text-[#070D18] font-semibold text-xs uppercase tracking-wider px-5 py-3 rounded-xl hover:bg-brand-teal-light transition-all shadow-md shadow-brand-teal/20 group",children:["Agendar Diagnóstico",p.jsx("span",{className:"group-hover:translate-x-1 transition-transform",children:"→"})]})]})]}),p.jsxs("div",{className:"footer-bottom-legal",children:[p.jsx("div",{children:"© 2026 CAPIBARIBE CONSULTORIA • TODOS OS DIREITOS RESERVADOS"}),p.jsx("div",{className:"text-white/35",children:"CONFORMIDADE CVM 175 • MARCOS LEGAIS DE FOMENTO • SUDENE & PRODEPE"}),p.jsx("div",{className:"text-white/40",children:"DESIGN & TECNOLOGIA POR AR MÍDIAS INTEGRADAS"})]})]})]})}const JR=[{label:"Início",href:"/test",icon:MG},{label:"Serviços",href:"/servicos",icon:T3},{label:"Simulador",href:"/simulador",icon:N3},{label:"Glossário",href:"/glossario",icon:og}];function Koe(){const e=ua();return p.jsx("nav",{className:"md:hidden fixed bottom-0 inset-x-0 z-50 px-3 pb-3 pt-2",style:{paddingBottom:"max(0.75rem, env(safe-area-inset-bottom))"},children:p.jsxs("div",{className:"glass-dark rounded-2xl border border-white/10 shadow-2xl flex items-center justify-around px-2 py-1.5",children:[JR.slice(0,2).map(t=>{const n=e.pathname===t.href,r=t.icon;return p.jsxs(Mt,{to:t.href,className:"flex flex-col items-center gap-1 px-3 py-2 min-w-[56px]","aria-label":t.label,children:[p.jsx(r,{className:`w-5 h-5 transition-colors ${n?"text-brand-teal":"text-white/60"}`,strokeWidth:n?2.2:1.8}),p.jsx("span",{className:`text-[0.6rem] font-medium transition-colors ${n?"text-brand-teal":"text-white/55"}`,children:t.label})]},t.href)}),p.jsxs("a",{href:"https://wa.me/558140028922",target:"_blank",rel:"noopener noreferrer","aria-label":"Falar no WhatsApp",className:"flex flex-col items-center -mt-7",children:[p.jsx("span",{className:"w-14 h-14 rounded-full bg-brand-teal text-brand-navy flex items-center justify-center shadow-lg shadow-brand-teal/40 border-4 border-brand-ink",children:p.jsx(zy,{className:"w-6 h-6",strokeWidth:2.2})}),p.jsx("span",{className:"text-[0.6rem] font-semibold text-brand-teal mt-0.5",children:"WhatsApp"})]}),JR.slice(2).map(t=>{const n=e.pathname===t.href,r=t.icon;return p.jsxs(Mt,{to:t.href,className:"flex flex-col items-center gap-1 px-3 py-2 min-w-[56px]","aria-label":t.label,children:[p.jsx(r,{className:`w-5 h-5 transition-colors ${n?"text-brand-teal":"text-white/60"}`,strokeWidth:n?2.2:1.8}),p.jsx("span",{className:`text-[0.6rem] font-medium transition-colors ${n?"text-brand-teal":"text-white/55"}`,children:t.label})]},t.href)})]})})}function FloatingWhatsApp(){return p.jsxs("div",{className:"floating-whatsapp-container",children:[p.jsxs("div",{className:"floating-whatsapp-tooltip",children:[p.jsx("span",{className:"w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"}),p.jsx("span",{className:"text-white font-semibold text-xs tracking-wide whitespace-nowrap",children:"Falar com Especialista via WhatsApp"})]}),p.jsxs("a",{href:"https://wa.me/558140028922",target:"_blank",rel:"noopener noreferrer","aria-label":"Falar com a Capibaribe Consultoria no WhatsApp",className:"floating-whatsapp-trigger group",children:[p.jsx("div",{className:"floating-whatsapp-beacon"}),p.jsx("div",{className:"floating-whatsapp-status-dot"}),p.jsx(zy,{className:"w-7 h-7 text-white group-hover:scale-110 transition-transform duration-200",strokeWidth:2.2})]})]})}function Goe(){const loc=ua();const isTest=loc.pathname==="/test"||loc.pathname==="/teste";return p.jsxs("div",{className:"min-h-screen flex flex-col bg-brand-surface",children:[p.jsx(Woe,{}),p.jsx("main",{className:"flex-1",children:p.jsx(M5,{})}),p.jsx(Hoe,{}),!isTest&&p.jsx(Koe,{}),!isTest&&p.jsx("div",{className:"h-24 md:hidden","aria-hidden":"true"}),p.jsx(FloatingWhatsApp,{})]})}const Ur={heroPrivate:"images/4f7f6bf35_generated_image.png",heroPublic:"images/recife_capibaribe.jpg",aboutOffice:"images/c05510da3_generated_image.png",infrastructure:"images/7f0807607_generated_image.png",architecture:"images/a72911bb2_generated_image.png",cableDetail:"images/628e9dfe2_generated_image.png"};function Xoe(){
 return p.jsxs("section",{className:"hero-editorial-section",children:[
   // 1. Background photograph with slow subtle zoom (1.03 -> 1.00)
   p.jsx("div",{className:"absolute inset-0 z-0 select-none pointer-events-none overflow-hidden",children:p.jsxs(p.Fragment,{children:[
@@ -2400,7 +2400,7 @@ function ExpertiseSection(){
 
   return p.jsxs("section", {
     id: "sobre",
-    className: "sobre-fullscreen-section py-24 md:py-32",
+    className: "sobre-fullscreen-section",
     children: [
       p.jsx("img", {
         src: "images/recife_capibaribe.jpg",
@@ -2614,7 +2614,7 @@ function InsightsSection(){
         className: 'max-w-[1440px] mx-auto px-6 md:px-12',
         children: [
           p.jsxs('div', {
-            className: 'flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-20',
+            className: 'insights-header-refined',
             children: [
               p.jsxs('div', {
                 className: 'max-w-2xl',
@@ -2720,47 +2720,137 @@ function InsightsSection(){
 
 function CtaFinalSection(){
   return p.jsxs('section', {
-    className: 'py-32 md:py-44 bg-dark-section relative overflow-hidden',
+    id: 'proximo-passo',
+    className: 'cta-nextstep-section',
     children: [
+      p.jsx('div', { className: 'cta-nextstep-bg-glow' }),
+      p.jsx('div', { className: 'cta-nextstep-grid' }),
       p.jsxs('div', {
-        className: 'max-w-[1440px] mx-auto px-6 md:px-12 relative z-10 text-center flex flex-col items-center',
+        className: 'relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col items-center text-center',
         children: [
+          // Eyebrow
           p.jsxs('div', {
-            className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-6 font-semibold',
+            className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-6 font-semibold',
             children: [
-              p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-              'PRÓXIMO PASSO',
+              p.jsx('span', { className: 'beacon-dot-teal' }),
+              '09 // PRÓXIMO PASSO',
               p.jsx('span', { className: 'w-6 h-px bg-brand-teal' })
             ]
           }),
+          // Title
           p.jsx('h2', {
-            className: 'font-heading font-semibold text-white text-3xl sm:text-5xl md:text-6xl tracking-[-0.035em] leading-[1.06] max-w-4xl mb-6 text-balance',
-            children: 'A próxima grande decisão da sua empresa pode começar aqui.'
+            className: 'font-heading font-light text-white text-3xl sm:text-5xl md:text-6xl tracking-[-0.035em] leading-[1.08] max-w-4xl mb-6 text-balance',
+            children: 'A próxima grande decisão da sua empresa começa com a estrutura certa.'
           }),
+          // Description
           p.jsx('p', {
-            className: 'text-white/75 text-base sm:text-xl leading-relaxed max-w-2xl mb-10',
-            children: 'Converse com a Capibaribe Consultoria e descubra onde sua operação pode ganhar eficiência, estrutura de capital e segurança tributária.'
+            className: 'text-white/75 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mb-12',
+            children: 'Converse diretamente com os sócios da Capibaribe Consultoria e descubra onde sua operação pode destravar liquidez, otimizar sua estrutura de capital e capturar incentivos fiscais legítimos.'
           }),
+          // 3 Executive Pillars
+          p.jsxs('div', {
+            className: 'grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl w-full mb-12 text-left',
+            children: [
+              p.jsxs('div', {
+                className: 'cta-pillar-card',
+                children: [
+                  p.jsx('div', {
+                    className: 'font-mono text-[0.65rem] text-brand-teal uppercase tracking-[0.24em] mb-2 font-semibold',
+                    children: '01 // TRIAGEM ANALÍTICA'
+                  }),
+                  p.jsx('h4', {
+                    className: 'font-heading font-semibold text-white text-base mb-1.5',
+                    children: 'Diagnóstico Sem Custo Inicial'
+                  }),
+                  p.jsx('p', {
+                    className: 'text-white/65 text-xs sm:text-sm leading-relaxed font-light',
+                    children: 'Avaliação prévia confidencial de viabilidade econômico-financeira e enquadramento em incentivos regionais (SUDENE/PRODEPE).'
+                  })
+                ]
+              }),
+              p.jsxs('div', {
+                className: 'cta-pillar-card',
+                children: [
+                  p.jsx('div', {
+                    className: 'font-mono text-[0.65rem] text-brand-teal uppercase tracking-[0.24em] mb-2 font-semibold',
+                    children: '02 // SENIORIDADE DIRETA'
+                  }),
+                  p.jsx('h4', {
+                    className: 'font-heading font-semibold text-white text-base mb-1.5',
+                    children: 'Acesso Direto aos Sócios'
+                  }),
+                  p.jsx('p', {
+                    className: 'text-white/65 text-xs sm:text-sm leading-relaxed font-light',
+                    children: 'Interlocução técnica sênior desde o primeiro alinhamento, com executivos de histórico comprovado em grandes operações de capital.'
+                  })
+                ]
+              }),
+              p.jsxs('div', {
+                className: 'cta-pillar-card',
+                children: [
+                  p.jsx('div', {
+                    className: 'font-mono text-[0.65rem] text-brand-teal uppercase tracking-[0.24em] mb-2 font-semibold',
+                    children: '03 // RIGOR PROTOCOLAR'
+                  }),
+                  p.jsx('h4', {
+                    className: 'font-heading font-semibold text-white text-base mb-1.5',
+                    children: 'Sigilo Absoluto & Compliance'
+                  }),
+                  p.jsx('p', {
+                    className: 'text-white/65 text-xs sm:text-sm leading-relaxed font-light',
+                    children: 'Termos de confidencialidade rígidos (NDA) e total conformidade com os mais altos padrões de governança e regulação de mercado.'
+                  })
+                ]
+              })
+            ]
+          }),
+          // CTAs
           p.jsxs('div', {
             className: 'flex flex-wrap items-center justify-center gap-4',
             children: [
               p.jsxs(Mt, {
                 to: '/contato',
-                className: 'inline-flex items-center justify-center gap-2.5 bg-brand-teal text-[#0F1A2E] font-bold text-base px-8 py-4 rounded-lg hover:bg-brand-teal-light transition-all shadow-xl shadow-brand-teal/20 group',
+                className: 'inline-flex items-center justify-center gap-3 bg-brand-teal text-[#070D18] font-bold text-base px-8 py-4 rounded-xl hover:bg-brand-teal-light transition-all duration-300 shadow-xl shadow-brand-teal/25 group',
                 children: [
-                  'Agendar Diagnóstico Estratégico',
-                  p.jsx('span', { className: 'group-hover:translate-x-1.5 transition-transform', children: '→' })
+                  p.jsx('span', { children: 'Agendar Diagnóstico Estratégico' }),
+                  p.jsx('span', { className: 'group-hover:translate-x-1.5 transition-transform duration-300', children: '→' })
                 ]
               }),
               p.jsxs('a', {
                 href: er.whatsapp,
                 target: '_blank',
                 rel: 'noopener noreferrer',
-                className: 'inline-flex items-center justify-center gap-2 border border-white/25 text-white hover:border-white/50 px-7 py-4 rounded-lg font-medium text-base backdrop-blur-sm transition-all',
+                className: 'inline-flex items-center justify-center gap-2.5 border border-white/20 hover:border-white/40 bg-white/5 hover:bg-white/10 text-white px-7 py-4 rounded-xl font-medium text-base backdrop-blur-md transition-all',
                 children: [
                   p.jsx(zy, { className: 'w-4.5 h-4.5 text-brand-teal' }),
-                  'Falar no WhatsApp'
+                  'Canal Direto via WhatsApp'
                 ]
+              })
+            ]
+          }),
+          // Telemetry Bar
+          p.jsxs('div', {
+            className: 'cta-telemetry-bar',
+            children: [
+              p.jsxs('div', {
+                className: 'flex items-center gap-2 font-mono text-[0.66rem] uppercase tracking-[0.2em] text-white/50',
+                children: [
+                  p.jsx('span', { className: 'w-1.5 h-1.5 rounded-full bg-brand-teal' }),
+                  'TEMPO DE RESPOSTA: < 4H ÚTEIS'
+                ]
+              }),
+              p.jsx('span', { className: 'text-white/20 hidden sm:inline', children: '•' }),
+              p.jsxs('div', {
+                className: 'flex items-center gap-2 font-mono text-[0.66rem] uppercase tracking-[0.2em] text-white/50',
+                children: [
+                  p.jsx('span', { className: 'w-1.5 h-1.5 rounded-full bg-emerald-400' }),
+                  'COBERTURA: NORTE, NORDESTE E NACIONAL'
+                ]
+              }),
+              p.jsx('span', { className: 'text-white/20 hidden sm:inline', children: '•' }),
+              p.jsx('span', {
+                className: 'font-mono text-[0.66rem] uppercase tracking-[0.2em] text-white/50',
+                children: 'SEDE: RECIFE, PE'
               })
             ]
           })

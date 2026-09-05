@@ -824,5 +824,252 @@
   background-color: rgba(42, 187, 167, 0.1);
 }
 
+/* ==========================================================================
+   PHASE 6: VISUAL CARDS, ANIMATED DATA TELEMETRY & EDITORIAL INSIGHTS
+   ========================================================================== */
+
+@keyframes pulseBeaconGreen {
+  0%, 100% { transform: scale(0.9); opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  50% { transform: scale(1.15); opacity: 0.8; box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+
+@keyframes pulseBeaconTeal {
+  0%, 100% { transform: scale(0.9); opacity: 1; box-shadow: 0 0 0 0 rgba(42, 187, 167, 0.7); }
+  50% { transform: scale(1.15); opacity: 0.8; box-shadow: 0 0 0 6px rgba(42, 187, 167, 0); }
+}
+
+@keyframes dataBarPulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+@keyframes hudScan {
+  0% { top: 0%; opacity: 0; }
+  15% { opacity: 0.7; }
+  85% { opacity: 0.7; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.beacon-dot-green {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10B981;
+  display: inline-block;
+  animation: pulseBeaconGreen 2s infinite ease-in-out;
+}
+
+.beacon-dot-teal {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #2ABBA7;
+  display: inline-block;
+  animation: pulseBeaconTeal 2s infinite ease-in-out;
+}
+
+.hud-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #2ABBA7, transparent);
+  animation: hudScan 4s linear infinite;
+  pointer-events: none;
+}
+
+/* Visual Case Cards */
+.case-visual-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px -4px rgba(15, 26, 46, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.case-visual-card:hover {
+  border-color: rgba(21, 151, 147, 0.45);
+  box-shadow: 0 20px 40px -12px rgba(15, 26, 46, 0.12);
+  transform: translateY(-4px);
+}
+
+.case-visual-img-wrap {
+  position: relative;
+  height: 14rem;
+  width: 100%;
+  overflow: hidden;
+}
+.case-visual-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.case-visual-card:hover .case-visual-img-wrap img {
+  transform: scale(1.06);
+}
+
+.case-visual-body {
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .case-visual-body {
+    padding: 1.75rem 2rem 1.5rem;
+  }
+}
+
+.case-visual-footer {
+  margin: 0 1.5rem;
+  padding: 1.25rem 0 1.75rem;
+  border-top: 1px solid #F1F5F9;
+}
+@media (min-width: 768px) {
+  .case-visual-footer {
+    margin: 0 2rem;
+    padding: 1.25rem 0 2rem;
+  }
+}
+
+.data-telemetry-box {
+  background-color: #F8FAFC;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 0.75rem;
+  padding: 0.875rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Insights Section */
+.insights-section-refined {
+  padding: 5.5rem 0;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.12);
+}
+@media (min-width: 768px) {
+  .insights-section-refined {
+    padding: 7.5rem 0;
+  }
+}
+
+/* Visual Insight Cards */
+.insights-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .insights-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.insight-visual-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  box-shadow: 0 4px 20px -4px rgba(15, 26, 46, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.insight-visual-card:hover {
+  border-color: rgba(21, 151, 147, 0.45);
+  box-shadow: 0 20px 40px -12px rgba(15, 26, 46, 0.12);
+  transform: translateY(-4px);
+}
+
+.insight-visual-img-wrap {
+  position: relative;
+  height: 14rem;
+  width: 100%;
+  overflow: hidden;
+}
+.insight-visual-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.insight-visual-card:hover .insight-visual-img-wrap img {
+  transform: scale(1.06);
+}
+
+.insight-visual-body {
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .insight-visual-body {
+    padding: 1.75rem 2rem 1.5rem;
+  }
+}
+
+.insight-visual-footer {
+  margin: 0 1.5rem;
+  padding: 1.25rem 0 1.75rem;
+  border-top: 1px solid #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .insight-visual-footer {
+    margin: 0 2rem;
+    padding: 1.25rem 0 2rem;
+  }
+}
+
+.telemetry-progress-track {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(226, 232, 240, 0.8);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.telemetry-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #159793, #2ABBA7);
+  border-radius: 9999px;
+  transition: width 0.6s ease;
+}
+
+/* Sobre Visual Enhancements */
+.sobre-radar-hud {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(8, 14, 26, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FFFFFF;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+}
+
+.regulatory-ticker-strip {
+  background-color: #070D18;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
 
 

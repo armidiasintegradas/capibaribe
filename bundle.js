@@ -2145,71 +2145,45 @@ function CasesSection(){
   const cases = [
     {
       sector: 'INDÚSTRIA DE TRANSFORMAÇÃO',
-      tag: 'REESTRUTURAÇÃO // FUNDING',
+      tag: 'LEI 12.431 // DÍVIDA ESTRUTURADA',
+      status: 'OPERAÇÃO ATIVA',
+      img: 'images/case_industria.jpg',
       title: 'Estruturação de Capital e Adequação de Passivos',
+      hudLabel: 'ÍNDICE DE ALINHAMENTO DE FLUXO',
+      hudValue: '94.2% ALINHADO',
+      hudWidth: '94%',
+      hudMeta: ['PRAZO: LONGO PRAZO', 'PERFIL: REESTRUTURAÇÃO'],
       desafio: 'Necessidade de adequação da estrutura financeira e do perfil de endividamento para sustentar planos de investimento operacional.',
       estrategia: 'Modelagem econômico-financeira detalhada, análise criteriosa de instrumentos de funding e interlocução técnica qualificada com instituições de fomento.',
-      resultado: 'Otimização da estrutura de liquidez e alinhamento do fluxo de caixa às necessidades de longo prazo da operação.',
-      icon: p.jsxs('svg', {
-        className: 'w-6 h-6',
-        viewBox: '0 0 24 24',
-        fill: 'none',
-        stroke: 'currentColor',
-        strokeWidth: '1.4',
-        children: [
-          p.jsx('path', { d: 'M2 20h20M4 20V8l6 4V4l10 8v8', strokeOpacity: '0.75' }),
-          p.jsx('line', { x1: '16', y1: '8', x2: '16', y2: '12', stroke: '#159793', className: 'anim-scan' }),
-          p.jsx('circle', { cx: '16', cy: '16', r: '1.5', fill: '#159793' })
-        ]
-      })
+      resultado: 'Otimização da estrutura de liquidez e alinhamento do fluxo de caixa às necessidades de longo prazo da operação.'
     },
     {
       sector: 'VAREJO & DISTRIBUIÇÃO',
-      tag: 'SUDENE // PRODEPE',
+      tag: 'SUDENE & PRODEPE',
+      status: 'INCENTIVO HOMOLOGADO',
+      img: 'images/case_logistica.jpg',
       title: 'Inteligência Fiscal e Incentivos Regionais',
+      hudLabel: 'EFICIÊNCIA TRIBUTÁRIA ESTRUTURADA',
+      hudValue: '100% CONFORME',
+      hudWidth: '98%',
+      hudMeta: ['REGIME: LUCRO REAL', 'MARCO: ART. 1º LEI 5.172'],
       desafio: 'Otimização fiscal e busca por competitividade tributária com segurança jurídica e conformidade regulatória.',
       estrategia: 'Diagnóstico tributário aprofundado, mapeamento de benefícios fiscais regionais aplicáveis e estruturação de pleito perante órgãos de desenvolvimento.',
-      resultado: 'Habilitação e enquadramento em incentivos fiscais regionais, assegurando eficiência tributária e competitividade sustentável.',
-      icon: p.jsxs('svg', {
-        className: 'w-6 h-6',
-        viewBox: '0 0 24 24',
-        fill: 'none',
-        stroke: 'currentColor',
-        strokeWidth: '1.4',
-        children: [
-          p.jsx('circle', { cx: '12', cy: '12', r: '3', stroke: '#159793', className: 'anim-pulse' }),
-          p.jsx('circle', { cx: '4', cy: '6', r: '2', strokeOpacity: '0.6' }),
-          p.jsx('circle', { cx: '20', cy: '6', r: '2', strokeOpacity: '0.6' }),
-          p.jsx('circle', { cx: '4', cy: '18', r: '2', strokeOpacity: '0.6' }),
-          p.jsx('circle', { cx: '20', cy: '18', r: '2', strokeOpacity: '0.6' }),
-          p.jsx('line', { x1: '5.5', y1: '7.5', x2: '10', y2: '10.5', strokeOpacity: '0.4' }),
-          p.jsx('line', { x1: '18.5', y1: '7.5', x2: '14', y2: '10.5', strokeOpacity: '0.4' }),
-          p.jsx('line', { x1: '5.5', y1: '16.5', x2: '10', y2: '13.5', strokeOpacity: '0.4' }),
-          p.jsx('line', { x1: '18.5', y1: '16.5', x2: '14', y2: '13.5', strokeOpacity: '0.4' })
-        ]
-      })
+      resultado: 'Habilitação e enquadramento em incentivos fiscais regionais (SUDENE / PRODEPE), assegurando eficiência tributária e competitividade sustentável.'
     },
     {
       sector: 'AGRONEGÓCIO & INFRAESTRUTURA',
-      tag: 'EVTE // BNDES & BNB',
+      tag: 'BNDES FINEM & BNB FNE',
+      status: 'HABILITADO EM COMITÊ',
+      img: 'images/case_agro_infra.jpg',
       title: 'Financiamento de Longo Prazo para Expansão',
+      hudLabel: 'VIABILIDADE TÉCNICA (EVTE)',
+      hudValue: 'FASE FINAL // APROVADO',
+      hudWidth: '96%',
+      hudMeta: ['ESTRUTURA: SPE NON-RECOURSE', 'CARÊNCIA: ESTENDIDA'],
       desafio: 'Estruturação de viabilidade técnica e financeira para implantação de novos ativos industriais e projetos de infraestrutura.',
       estrategia: 'Elaboração completa de Estudo de Viabilidade Técnica e Econômica (EVTE) aderente às diretrizes de agentes financeiros (BNDES, BNB e FINEP).',
-      resultado: 'Estruturação integral do projeto e encaminhamento técnico do plano de investimentos para expansão das operações.',
-      icon: p.jsxs('svg', {
-        className: 'w-6 h-6',
-        viewBox: '0 0 24 24',
-        fill: 'none',
-        stroke: 'currentColor',
-        strokeWidth: '1.4',
-        children: [
-          p.jsx('path', { d: 'M3 20h18M4 16c4-3 8-3 16 0M4 12c4-2 8-2 16 0', strokeOpacity: '0.4' }),
-          p.jsx('line', { x1: '12', y1: '4', x2: '12', y2: '20', stroke: '#159793', strokeWidth: '1.6' }),
-          p.jsx('line', { x1: '12', y1: '6', x2: '6', y2: '16', strokeOpacity: '0.6' }),
-          p.jsx('line', { x1: '12', y1: '6', x2: '18', y2: '16', strokeOpacity: '0.6' }),
-          p.jsx('circle', { cx: '12', cy: '5', r: '1.5', fill: '#159793', className: 'anim-pulse' })
-        ]
-      })
+      resultado: 'Estruturação integral do projeto e encaminhamento técnico do plano de investimentos para expansão das operações.'
     }
   ];
 
@@ -2242,7 +2216,7 @@ function CasesSection(){
                 className: 'pt-2 md:pt-8',
                 children: p.jsx('p', {
                   className: 'text-slate-600 text-base md:text-lg leading-relaxed',
-                  children: 'A forma como estruturamos soluções reflete diretamente na liquidez, governança e competitividade dos nossos clientes, sem promessas vazias e com foco estrito em entregas factuais.'
+                  children: 'A forma como estruturamos soluções reflete diretamente na liquidez, governança e competitividade dos nossos clientes, com acompanhamento de dados factuais e conformidade regulatória.'
                 })
               })
             ]
@@ -2252,44 +2226,90 @@ function CasesSection(){
             children: cases.map((cs) =>
               p.jsxs('div', {
                 key: cs.title,
-                className: 'case-card-refined group',
+                className: 'case-visual-card group',
                 children: [
                   p.jsxs('div', {
                     children: [
                       p.jsxs('div', {
-                        className: 'flex items-center justify-between mb-6 pb-4 border-b border-slate-100',
+                        className: 'case-visual-img-wrap',
                         children: [
-                          p.jsx('div', {
-                            className: 'mono-icon-box-light',
-                            children: cs.icon
+                          p.jsx('img', {
+                            src: cs.img,
+                            alt: cs.title
                           }),
-                          p.jsx('span', {
-                            className: 'font-mono text-[0.65rem] uppercase tracking-wider text-slate-400 font-semibold',
-                            children: cs.tag
+                          p.jsx('div', {
+                            className: 'absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent'
+                          }),
+                          p.jsxs('div', {
+                            className: 'absolute top-3 left-3 right-3 flex items-center justify-between',
+                            children: [
+                              p.jsxs('span', {
+                                className: 'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-white/10 font-mono text-[0.62rem] uppercase tracking-wider text-emerald-300 font-semibold',
+                                children: [
+                                  p.jsx('span', { className: 'beacon-dot-green' }),
+                                  cs.status
+                                ]
+                              }),
+                              p.jsx('span', {
+                                className: 'px-2 py-0.5 rounded bg-slate-950/70 backdrop-blur-md border border-white/10 font-mono text-[0.6rem] uppercase tracking-wider text-white/80',
+                                children: cs.tag
+                              })
+                            ]
+                          }),
+                          p.jsx('div', {
+                            className: 'absolute bottom-3 left-4',
+                            children: p.jsx('span', {
+                              className: 'font-mono text-[0.68rem] uppercase tracking-[0.2em] text-teal-300 font-bold',
+                              children: cs.sector
+                            })
                           })
                         ]
                       }),
-                      p.jsx('span', {
-                        className: 'inline-block font-mono text-[0.68rem] uppercase tracking-[0.2em] text-brand-teal font-bold mb-2',
-                        children: cs.sector
-                      }),
-                      p.jsx('h3', {
-                        className: 'font-heading font-semibold text-xl text-slate-900 mb-6 leading-snug',
-                        children: cs.title
-                      }),
                       p.jsxs('div', {
-                        className: 'space-y-4 mb-6',
+                        className: 'case-visual-body',
                         children: [
+                          p.jsx('h3', {
+                            className: 'font-heading font-semibold text-xl text-slate-900 mb-4 leading-snug',
+                            children: cs.title
+                          }),
                           p.jsxs('div', {
+                            className: 'data-telemetry-box',
                             children: [
-                              p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-slate-400 font-semibold mb-1', children: '01 // Desafio' }),
-                              p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.desafio })
+                              p.jsxs('div', {
+                                className: 'flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-wider mb-2',
+                                children: [
+                                  p.jsx('span', { className: 'text-slate-500 font-semibold', children: cs.hudLabel }),
+                                  p.jsx('span', { className: 'text-brand-teal font-bold', children: cs.hudValue })
+                                ]
+                              }),
+                              p.jsx('div', {
+                                className: 'telemetry-progress-track',
+                                children: p.jsx('div', {
+                                  className: 'telemetry-progress-fill',
+                                  style: { width: cs.hudWidth }
+                                })
+                              }),
+                              p.jsx('div', {
+                                className: 'mt-2 flex items-center justify-between font-mono text-[0.6rem] text-slate-400',
+                                children: cs.hudMeta.map((m) => p.jsx('span', { key: m, children: m }))
+                              })
                             ]
                           }),
                           p.jsxs('div', {
+                            className: 'space-y-4 mb-6',
                             children: [
-                              p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-brand-teal font-semibold mb-1', children: '02 // Estratégia Capibaribe' }),
-                              p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.estrategia })
+                              p.jsxs('div', {
+                                children: [
+                                  p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-slate-400 font-semibold mb-1', children: '01 // Desafio' }),
+                                  p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.desafio })
+                                ]
+                              }),
+                              p.jsxs('div', {
+                                children: [
+                                  p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-brand-teal font-semibold mb-1', children: '02 // Estratégia Capibaribe' }),
+                                  p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.estrategia })
+                                ]
+                              })
                             ]
                           })
                         ]
@@ -2297,7 +2317,7 @@ function CasesSection(){
                     ]
                   }),
                   p.jsxs('div', {
-                    className: 'pt-5 border-t border-slate-200/80',
+                    className: 'case-visual-footer',
                     children: [
                       p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-slate-900 font-bold mb-1', children: '03 // Impacto Estrutural' }),
                       p.jsx('p', { className: 'text-slate-800 font-medium text-sm leading-relaxed', children: cs.resultado })
@@ -2316,7 +2336,9 @@ function CasesSection(){
 function ExpertiseSection(){
   const pillars = [
     {
-      title: 'Visão 360°',
+      title: 'Visão 360° Convergente',
+      metric: 'CONVERGÊNCIA: 100% INTEGRADA',
+      progress: '98%',
       desc: 'Não apenas captamos recursos ou revisamos impostos isoladamente — articulamos estrutura de capital, eficiência fiscal e governança corporativa em uma única estratégia convergente.',
       icon: p.jsxs('svg', {
         className: 'w-6 h-6',
@@ -2332,8 +2354,10 @@ function ExpertiseSection(){
       })
     },
     {
-      title: 'Trânsito Institucional Qualificado',
-      desc: 'Atuação técnica e protocolar junto às principais instituições de fomento do Brasil: BNDES, Banco do Nordeste (BNB), BASA, FINEP, SUDENE e secretarias estaduais de fazenda.',
+      title: 'Trânsito Institucional Protocolar',
+      metric: 'INTERLOCUÇÃO: BNDES • BNB • BASA • FINEP • SUDENE',
+      progress: '95%',
+      desc: 'Atuação técnica e protocolar junto às principais instituições de fomento do Brasil e secretarias de fazenda, cumprindo com rigor cada etapa das normativas vigentes.',
       icon: p.jsxs('svg', {
         className: 'w-6 h-6',
         viewBox: '0 0 24 24',
@@ -2348,7 +2372,9 @@ function ExpertiseSection(){
     },
     {
       title: 'Presença Regional & Alcance Nacional',
-      desc: 'Sediada em Pernambuco, com sólida inserção no ecossistema econômico do Norte/Nordeste e capacidade de estruturação de operações em âmbito nacional.',
+      metric: 'CAPILARIDADE: NORTE/NORDESTE & ESCALA NACIONAL',
+      progress: '92%',
+      desc: 'Sediada em Pernambuco, com sólida inserção no ecossistema econômico do Norte/Nordeste e capacidade comprovada de estruturação de operações em âmbito nacional.',
       icon: p.jsxs('svg', {
         className: 'w-6 h-6',
         viewBox: '0 0 24 24',
@@ -2401,16 +2427,29 @@ function ExpertiseSection(){
                     children: pillars.map((pl) =>
                       p.jsxs('div', {
                         key: pl.title,
-                        className: 'sobre-pillar-refined group',
+                        className: 'sobre-pillar-refined group flex-col sm:flex-row items-start gap-4 p-5',
                         children: [
                           p.jsx('div', {
-                            className: 'mono-icon-box-light',
+                            className: 'mono-icon-box-light shrink-0',
                             children: pl.icon
                           }),
                           p.jsxs('div', {
-                            className: 'flex-1',
+                            className: 'flex-1 w-full',
                             children: [
-                              p.jsx('h3', { className: 'font-heading font-semibold text-base md:text-lg text-slate-900 mb-1.5', children: pl.title }),
+                              p.jsxs('div', {
+                                className: 'flex items-center justify-between mb-1.5 flex-wrap gap-2',
+                                children: [
+                                  p.jsx('h3', { className: 'font-heading font-semibold text-base md:text-lg text-slate-900', children: pl.title }),
+                                  p.jsx('span', { className: 'font-mono text-[0.6rem] uppercase tracking-wider text-brand-teal font-semibold', children: pl.metric })
+                                ]
+                              }),
+                              p.jsx('div', {
+                                className: 'w-full h-1 bg-slate-200/80 rounded-full mb-2 overflow-hidden',
+                                children: p.jsx('div', {
+                                  className: 'h-full bg-gradient-to-r from-brand-teal to-brand-teal-light rounded-full',
+                                  style: { width: pl.progress }
+                                })
+                              }),
                               p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: pl.desc })
                             ]
                           })
@@ -2424,15 +2463,23 @@ function ExpertiseSection(){
                 className: 'flex flex-col gap-4',
                 children: [
                   p.jsxs('div', {
-                    className: 'image-frame-editorial relative rounded-2xl overflow-hidden shadow-lg border border-slate-200/80',
+                    className: 'image-frame-editorial relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80',
                     children: [
                       p.jsx('img', {
                         src: 'images/hero_recife_opcao_b.jpg',
                         alt: 'Recife e o Rio Capibaribe',
-                        className: 'w-full h-[460px] md:h-[540px] object-cover'
+                        className: 'w-full h-[460px] md:h-[520px] object-cover'
+                      }),
+                      p.jsx('div', { className: 'hud-scan-line' }),
+                      p.jsxs('div', {
+                        className: 'sobre-radar-hud',
+                        children: [
+                          p.jsx('span', { className: 'beacon-dot-teal' }),
+                          '08° 03′ 14″ S / 34° 52′ 52″ W'
+                        ]
                       }),
                       p.jsxs('div', {
-                        className: 'absolute bottom-4 left-4 right-4 bg-slate-950/85 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3.5 flex items-center justify-between text-white',
+                        className: 'absolute bottom-4 left-4 right-4 bg-slate-950/85 backdrop-blur-md border border-white/10 rounded-xl px-5 py-4 flex items-center justify-between text-white',
                         children: [
                           p.jsxs('div', {
                             children: [
@@ -2440,7 +2487,13 @@ function ExpertiseSection(){
                               p.jsx('span', { className: 'font-heading font-bold text-sm tracking-wide', children: 'RECIFE • PERNAMBUCO' })
                             ]
                           }),
-                          p.jsx('span', { className: 'font-mono text-xs text-white/50', children: '08° 03′ S / 34° 52′ W' })
+                          p.jsxs('div', {
+                            className: 'text-right font-mono text-xs text-white/70',
+                            children: [
+                              p.jsx('span', { className: 'block text-emerald-400 font-semibold', children: 'OPERAÇÃO ATIVA' }),
+                              p.jsx('span', { className: 'text-[0.65rem] text-white/40', children: 'HUB NORTE / NORDESTE' })
+                            ]
+                          })
                         ]
                       })
                     ]
@@ -2456,19 +2509,49 @@ function ExpertiseSection(){
                       }),
                       p.jsxs('div', {
                         children: [
-                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'ATUAÇÃO' }),
+                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'ALCANCE' }),
                           p.jsx('span', { className: 'font-heading font-semibold text-xs text-slate-800', children: 'NORTE / NORDESTE' })
                         ]
                       }),
                       p.jsxs('div', {
                         children: [
-                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'DISCIPLINA' }),
+                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'DISCIPLINAS' }),
                           p.jsx('span', { className: 'font-heading font-semibold text-xs text-slate-800', children: 'FINANCE & TAX' })
                         ]
                       })
                     ]
                   })
                 ]
+              })
+            ]
+          }),
+          p.jsxs('div', {
+            className: 'regulatory-ticker-strip',
+            children: [
+              p.jsxs('div', {
+                className: 'flex items-center gap-2 font-mono text-xs text-white/80',
+                children: [
+                  p.jsx('span', { className: 'beacon-dot-green' }),
+                  p.jsx('span', { className: 'text-brand-teal font-semibold', children: 'MARCOS REGULATÓRIOS & FOMENTO OPERADOS:' })
+                ]
+              }),
+              p.jsxs('div', {
+                className: 'flex flex-wrap gap-2 text-white',
+                children: [
+                  'SUDENE ART. 1º',
+                  'PRODEPE ICMS',
+                  'BNDES FINEM',
+                  'BNB FNE',
+                  'FINEP INOVAÇÃO',
+                  'CVM 175',
+                  'LEI 12.431 DEBÊNTURES'
+                ].map((item) =>
+                  p.jsx('span', {
+                    key: item,
+                    className: 'px-2.5 py-1 rounded bg-white/5 border border-white/10 font-mono text-[0.65rem] uppercase tracking-wider text-slate-300',
+                    children: item
+                  })
+                )
               })
             ]
           })
@@ -2482,29 +2565,36 @@ function InsightsSection(){
   const articles = [
     {
       cat: 'TAX & INCENTIVOS',
-      title: 'Reforma Tributária e os Impactos nos Incentivos Regionais (SUDENE e PRODEPE)',
+      readTime: '5 MIN // ANÁLISE TÉCNICA',
       date: 'Agosto 2026',
-      readTime: '5 min de leitura',
+      img: 'images/insight_tax.jpg',
+      title: 'Reforma Tributária e os Impactos nos Incentivos Regionais (SUDENE e PRODEPE)',
+      excerpt: 'Análise técnica sobre o período de transição da reforma tributária, a manutenção das regras de incentivo fiscal da SUDENE até 2032 e as estratégias de adaptação para a indústria e o comércio.',
       href: '/blog'
     },
     {
       cat: 'FINANCE & GESTÃO',
-      title: 'Governança de Caixa e FP&A: O Que os Bancos Exigem das Médias Empresas',
+      readTime: '4 MIN // GOVERNANÇA',
       date: 'Julho 2026',
-      readTime: '4 min de leitura',
+      img: 'images/insight_finance.jpg',
+      title: 'Governança de Caixa e FP&A: O Que os Bancos Exigem das Médias Empresas',
+      excerpt: 'Os principais critérios de modelagem orçamentária, conciliação e demonstrativos auditáveis que instituições financeiras e comitês de risco exigem para concessão de crédito estruturado.',
       href: '/blog'
     },
     {
       cat: 'CAPITAL & FOMENTO',
-      title: 'Cenário de Fomento à Indústria: Oportunidades no BNDES e BNB para Expansão',
+      readTime: '6 MIN // FOMENTO',
       date: 'Junho 2026',
-      readTime: '6 min de leitura',
+      img: 'images/insight_capital.jpg',
+      title: 'Cenário de Fomento à Indústria: Oportunidades no BNDES e BNB para Expansão',
+      excerpt: 'Diretrizes operacionais e linhas de financiamento de longo prazo com taxas incentivadas para modernização de ativos, infraestrutura logística e projetos de inovação tecnológica.',
       href: '/blog'
     }
   ];
 
   return p.jsxs('section', {
-    className: 'py-28 md:py-36 bg-[#F8FAFC] border-b border-brand-slate/10',
+    id: 'insights',
+    className: 'insights-section-refined',
     children: [
       p.jsxs('div', {
         className: 'max-w-[1440px] mx-auto px-6 md:px-12',
@@ -2516,53 +2606,92 @@ function InsightsSection(){
                 className: 'max-w-2xl',
                 children: [
                   p.jsxs('div', {
-                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
+                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-4 font-semibold',
                     children: [
                       p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                      'INSIGHTS & ANÁLISES'
+                      '08 // INSIGHTS & ANÁLISES'
                     ]
                   }),
                   p.jsx('h2', {
-                    className: 'font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight',
-                    children: 'Inteligência para decisões mais seguras.'
+                    className: 'font-heading font-light text-slate-900 text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-tight',
+                    children: 'Inteligência analítica para decisões mais seguras.'
                   })
                 ]
               }),
               p.jsxs(Mt, {
                 to: '/blog',
-                className: 'inline-flex items-center gap-2 font-bold text-sm text-brand-teal hover:text-brand-teal-dark transition-colors group self-start md:self-auto',
+                className: 'inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider font-semibold text-brand-navy hover:text-brand-teal transition-colors group self-start md:self-auto py-2.5 px-4 bg-white border border-slate-200/80 rounded-xl shadow-sm',
                 children: [
                   'Ver todas as publicações',
-                  p.jsx('span', { className: 'group-hover:translate-x-1.5 transition-transform', children: '→' })
+                  p.jsx('span', { className: 'group-hover:translate-x-1 transition-transform', children: '→' })
                 ]
               })
             ]
           }),
           p.jsx('div', {
-            className: 'cases-grid',
+            className: 'insights-cards-grid',
             children: articles.map((a) =>
               p.jsxs(Mt, {
                 key: a.title,
                 to: a.href,
-                className: 'case-card p-8 group flex flex-col justify-between',
+                className: 'insight-visual-card group',
                 children: [
                   p.jsxs('div', {
                     children: [
-                      p.jsx('span', {
-                        className: 'block font-mono text-[0.7rem] uppercase tracking-[0.2em] text-brand-teal font-bold mb-4',
-                        children: a.cat
+                      p.jsxs('div', {
+                        className: 'insight-visual-img-wrap',
+                        children: [
+                          p.jsx('img', {
+                            src: a.img,
+                            alt: a.title
+                          }),
+                          p.jsx('div', {
+                            className: 'absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent'
+                          }),
+                          p.jsxs('div', {
+                            className: 'absolute top-3 left-3 right-3 flex items-center justify-between',
+                            children: [
+                              p.jsx('span', {
+                                className: 'px-2.5 py-1 rounded bg-slate-950/80 backdrop-blur-md border border-white/10 font-mono text-[0.62rem] uppercase tracking-wider text-teal-300 font-semibold',
+                                children: a.cat
+                              }),
+                              p.jsxs('span', {
+                                className: 'inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-950/70 backdrop-blur-md border border-white/10 font-mono text-[0.6rem] uppercase tracking-wider text-white/80',
+                                children: [
+                                  p.jsx('span', { className: 'beacon-dot-teal' }),
+                                  a.readTime
+                                ]
+                              })
+                            ]
+                          })
+                        ]
                       }),
-                      p.jsx('h3', {
-                        className: 'font-heading font-semibold text-xl text-brand-navy group-hover:text-brand-teal transition-colors leading-snug mb-6',
-                        children: a.title
+                      p.jsxs('div', {
+                        className: 'insight-visual-body',
+                        children: [
+                          p.jsx('h3', {
+                            className: 'font-heading font-semibold text-xl text-slate-900 group-hover:text-brand-teal transition-colors leading-snug mb-3',
+                            children: a.title
+                          }),
+                          p.jsx('p', {
+                            className: 'text-slate-600 text-sm leading-relaxed mb-4',
+                            children: a.excerpt
+                          })
+                        ]
                       })
                     ]
                   }),
                   p.jsxs('div', {
-                    className: 'pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-brand-slate/60 font-mono',
+                    className: 'insight-visual-footer font-mono text-xs text-slate-400',
                     children: [
-                      a.date,
-                      p.jsx('span', { children: a.readTime })
+                      p.jsx('span', { children: a.date }),
+                      p.jsxs('span', {
+                        className: 'inline-flex items-center gap-1 text-slate-900 font-semibold group-hover:text-brand-teal transition-colors',
+                        children: [
+                          'Acessar análise',
+                          p.jsx('span', { className: 'group-hover:translate-x-1 transition-transform', children: '→' })
+                        ]
+                      })
                     ]
                   })
                 ]

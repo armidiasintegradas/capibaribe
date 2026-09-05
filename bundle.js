@@ -736,7 +736,7 @@ return p.jsxs(p.Fragment, {
             children: [
               p.jsx(Mt, {
                 to: "/contato",
-                className: "hidden sm:inline-flex items-center justify-center bg-brand-teal text-[#0F1A2E] font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-brand-teal-light transition-all shadow-md shadow-brand-teal/20",
+                className: "hidden sm:inline-flex items-center justify-center bg-brand-teal text-white font-semibold text-sm px-6 py-2.5 rounded-lg hover:bg-brand-teal-light transition-all shadow-md shadow-brand-teal/25",
                 children: "Fale conosco"
               }),
               p.jsx("button", {
@@ -806,7 +806,7 @@ return p.jsxs(p.Fragment, {
             p.jsx(Mt, {
               to: "/contato",
               onClick: () => setMobileMenuOpen(false),
-              className: "w-full py-4 bg-brand-teal text-[#0F1A2E] font-bold text-center rounded-xl flex items-center justify-center gap-2",
+              className: "w-full py-4 bg-brand-teal text-white font-semibold text-center rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-brand-teal/25",
               children: "Fale conosco"
             }),
             p.jsxs("a", {
@@ -841,12 +841,6 @@ return p.jsxs("section",{className:"hero-editorial-section",children:[
 
   // 2. Main Hero Content (Negative space on left 45-50%)
   p.jsx("div",{className:"relative z-10 max-w-[1440px] w-full mx-auto px-6 md:px-12 pt-36 md:pt-44 pb-12 flex-1 flex flex-col justify-center",children:p.jsxs("div",{className:"max-w-2xl md:max-w-3xl",children:[
-    // Eyebrow
-    p.jsxs(xn.div,{initial:{opacity:0,y:12},animate:{opacity:1,y:0},transition:{duration:.6},className:"inline-flex items-center gap-2.5 font-mono text-[0.65rem] md:text-xs uppercase tracking-[0.3em] text-brand-teal mb-6 font-semibold",children:[
-      p.jsx("span",{className:"w-6 h-px bg-brand-teal"}),
-      "CAPIBARIBE CONSULTORIA"
-    ]}),
-
     // Headline with vertical mask reveal
     p.jsx("div",{className:"overflow-hidden pb-1 mb-6",children:p.jsxs(xn.h1,{
       initial:{y:"100%",opacity:0},
@@ -871,11 +865,11 @@ return p.jsxs("section",{className:"hero-editorial-section",children:[
 
     // CTAs
     p.jsxs(xn.div,{initial:{opacity:0,y:16},animate:{opacity:1,y:0},transition:{duration:.7,delay:.4},className:"flex flex-wrap items-center gap-4",children:[
-      p.jsxs(Mt,{to:"/contato",className:"inline-flex items-center justify-center gap-2.5 bg-brand-teal text-[#0F1A2E] font-bold text-sm md:text-base px-7 py-4 rounded-lg hover:bg-brand-teal-light transition-all duration-300 shadow-lg shadow-brand-teal/20 group",children:[
-        "Fale com um especialista",
-        p.jsx("span",{className:"group-hover:translate-x-1.5 transition-transform duration-300 font-bold",children:"→"})
+      p.jsxs(Mt,{to:"/contato",className:"inline-flex items-center justify-center gap-3 bg-brand-teal text-white font-semibold text-sm md:text-base px-6 py-3.5 md:py-4 rounded-xl hover:bg-brand-teal-light transition-all duration-300 shadow-lg shadow-brand-teal/20 group",children:[
+        p.jsx("span",{children:"Fale com um especialista"}),
+        p.jsx(za,{className:"w-4 h-4 ml-1 transition-transform duration-300 group-hover:translate-x-1 shrink-0"})
       ]}),
-      p.jsx("a",{href:"#manifesto",className:"inline-flex items-center justify-center gap-2 border border-white/25 text-white/90 hover:text-white hover:border-white/50 px-6 py-4 rounded-lg font-medium text-sm md:text-base backdrop-blur-sm transition-all",children:"Conheça nossas soluções"})
+      p.jsx("a",{href:"#manifesto",className:"inline-flex items-center justify-center gap-2 border border-white/25 text-white/90 hover:text-white hover:border-white/50 px-6 py-3.5 md:py-4 rounded-xl font-medium text-sm md:text-base backdrop-blur-sm transition-all",children:"Conheça nossas soluções"})
     ]})
   ]})}),
 

@@ -1,0 +1,4 @@
+*.bak
+spa_server*.py
+test_debug.html
+.DS_Store

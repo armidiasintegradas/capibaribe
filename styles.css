@@ -554,4 +554,275 @@
   }
 }
 
+/* ==========================================================================
+   PHASE 5: METODO, ATUAÇÃO, CASES, SOBRE (MINIMALIST & ANIMATED MONOCHROMATIC)
+   ========================================================================== */
+
+/* Keyframe animations for monochromatic SVG icons */
+@keyframes iconScan {
+  0%, 100% { transform: translateY(-3px); opacity: 0.4; }
+  50% { transform: translateY(3px); opacity: 0.95; }
+}
+
+@keyframes iconOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes iconPulseSubtle {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.06); opacity: 1; }
+}
+
+@keyframes iconBeacon {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+@keyframes iconFlow {
+  0%, 100% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: 16; }
+}
+
+.anim-scan {
+  animation: iconScan 3s ease-in-out infinite;
+}
+
+.anim-orbit {
+  animation: iconOrbit 24s linear infinite;
+  transform-origin: center;
+}
+
+.anim-pulse {
+  animation: iconPulseSubtle 2.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.anim-beacon {
+  animation: iconBeacon 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  transform-origin: center;
+}
+
+.anim-flow {
+  animation: iconFlow 3s ease-in-out infinite;
+}
+
+/* Section Containers & Headers */
+.metodo-section-refined {
+  padding: 5.5rem 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.12);
+}
+@media (min-width: 768px) {
+  .metodo-section-refined {
+    padding: 7.5rem 0;
+  }
+}
+
+.metodo-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .metodo-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .metodo-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metodo-card-refined {
+  background-color: #FAFAFC;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.metodo-card-refined:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(21, 151, 147, 0.4);
+  box-shadow: 0 12px 32px -8px rgba(15, 26, 46, 0.06);
+  transform: translateY(-3px);
+}
+
+/* Institutional Dark Section */
+.institucional-section-refined {
+  padding: 5.5rem 0;
+  background-color: #070D18;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .institucional-section-refined {
+    padding: 7.5rem 0;
+  }
+}
+
+.institucional-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .institucional-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .institucional-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.institucional-card-refined {
+  background-color: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.institucional-card-refined:hover {
+  background-color: rgba(255, 255, 255, 0.045);
+  border-color: rgba(42, 187, 167, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Cases Section */
+.cases-section-refined {
+  padding: 5.5rem 0;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.12);
+}
+@media (min-width: 768px) {
+  .cases-section-refined {
+    padding: 7.5rem 0;
+  }
+}
+
+.cases-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .cases-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.case-card-refined {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.case-card-refined:hover {
+  border-color: rgba(21, 151, 147, 0.4);
+  box-shadow: 0 16px 36px -8px rgba(15, 26, 46, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Sobre Section */
+.sobre-section-refined {
+  padding: 5.5rem 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.12);
+}
+@media (min-width: 768px) {
+  .sobre-section-refined {
+    padding: 7.5rem 0;
+  }
+}
+
+.sobre-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 1024px) {
+  .sobre-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+}
+
+.sobre-pillar-refined {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: #FAFAFC;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 0.875rem;
+  transition: all 0.3s ease;
+}
+.sobre-pillar-refined:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(21, 151, 147, 0.35);
+  box-shadow: 0 8px 24px -6px rgba(15, 26, 46, 0.05);
+}
+
+.mono-icon-box-light {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1E293B;
+  transition: all 0.3s ease;
+}
+.metodo-card-refined:hover .mono-icon-box-light,
+.case-card-refined:hover .mono-icon-box-light,
+.sobre-pillar-refined:hover .mono-icon-box-light {
+  border-color: #159793;
+  color: #0F172A;
+  background-color: #F0FAFA;
+}
+
+.mono-icon-box-dark {
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F8FAFC;
+  transition: all 0.3s ease;
+}
+.institucional-card-refined:hover .mono-icon-box-dark {
+  border-color: #2ABBA7;
+  color: #FFFFFF;
+  background-color: rgba(42, 187, 167, 0.1);
+}
+
+
 

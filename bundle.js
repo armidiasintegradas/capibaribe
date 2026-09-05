@@ -1800,81 +1800,163 @@ function MetodoSection(){
   const steps = [
     {
       num: '01',
-      title: 'Diagnóstico',
-      desc: 'Imersão técnica profunda, auditoria de balanços, fluxo de caixa e mapeamento minucioso de passivos e oportunidades fiscais ocultas.'
+      phase: 'FASE 01 • DIAGNÓSTICO',
+      title: 'Diagnóstico Analítico',
+      desc: 'Imersão técnica profunda, auditoria de balanços, fluxo de caixa e mapeamento minucioso de passivos e oportunidades fiscais ocultas.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('circle', { cx: '12', cy: '12', r: '9', strokeOpacity: '0.35' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '4', stroke: '#159793', className: 'anim-pulse' }),
+          p.jsx('line', { x1: '12', y1: '2', x2: '12', y2: '6' }),
+          p.jsx('line', { x1: '12', y1: '18', x2: '12', y2: '22' }),
+          p.jsx('line', { x1: '2', y1: '12', x2: '6', y2: '12' }),
+          p.jsx('line', { x1: '18', y1: '12', x2: '22', y2: '12' }),
+          p.jsx('line', { x1: '6', y1: '12', x2: '18', y2: '12', stroke: '#159793', strokeWidth: '1.2', className: 'anim-scan' })
+        ]
+      })
     },
     {
       num: '02',
-      title: 'Estratégia',
-      desc: 'Engenharia e modelagem personalizada, plano de ação estruturado e definição de metas de liquidez, custo de capital e valor.'
+      phase: 'FASE 02 • ESTRATÉGIA',
+      title: 'Engenharia Estratégica',
+      desc: 'Engenharia e modelagem personalizada, plano de ação estruturado e definição de metas de liquidez, custo de capital e valor.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('rect', { x: '3', y: '3', width: '18', height: '18', rx: '2', strokeOpacity: '0.35' }),
+          p.jsx('g', {
+            className: 'anim-orbit',
+            children: [
+              p.jsx('line', { x1: '3', y1: '12', x2: '21', y2: '12', strokeDasharray: '2 2', strokeOpacity: '0.4' }),
+              p.jsx('line', { x1: '12', y1: '3', x2: '12', y2: '21', strokeDasharray: '2 2', strokeOpacity: '0.4' }),
+              p.jsx('polygon', { points: '12,6 15,12 12,18 9,12', stroke: '#159793', fill: 'none' })
+            ]
+          }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '2', fill: 'currentColor' })
+        ]
+      })
     },
     {
       num: '03',
-      title: 'Implementação',
-      desc: 'Execução lado a lado com a diretoria executiva, interface direta com bancos de fomento (BNDES/BNB) e órgãos de conformidade fiscal.'
+      phase: 'FASE 03 • IMPLEMENTAÇÃO',
+      title: 'Execução Protocolar',
+      desc: 'Execução lado a lado com a diretoria executiva, interface direta com bancos de fomento (BNDES/BNB) e órgãos de conformidade fiscal.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M3 21h18M4 18h16M5 6l7-3 7 3v2H5V6z', strokeOpacity: '0.75' }),
+          p.jsx('line', { x1: '7', y1: '8', x2: '7', y2: '18' }),
+          p.jsx('line', { x1: '12', y1: '8', x2: '12', y2: '18', stroke: '#159793', className: 'anim-pulse' }),
+          p.jsx('line', { x1: '17', y1: '8', x2: '17', y2: '18' }),
+          p.jsx('circle', { cx: '12', cy: '4.5', r: '1', fill: '#159793', className: 'anim-beacon' })
+        ]
+      })
     },
     {
       num: '04',
-      title: 'Monitoramento',
-      desc: 'Governança contínua, mensuração de KPIs de desempenho financeiro e acompanhamento para perenidade dos resultados no longo prazo.'
+      phase: 'FASE 04 • MONITORAMENTO',
+      title: 'Governança & KPIs',
+      desc: 'Governança contínua, mensuração de KPIs de desempenho financeiro e acompanhamento para perenidade dos resultados no longo prazo.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M3.5 17.5A9 9 0 1 1 20.5 17.5', strokeOpacity: '0.35' }),
+          p.jsx('path', { d: 'M7 14l3-3 4 4 4-5', stroke: '#159793', strokeWidth: '1.5', className: 'anim-flow', strokeDasharray: '16' }),
+          p.jsx('circle', { cx: '18', cy: '10', r: '2', fill: '#159793', className: 'anim-pulse' }),
+          p.jsx('circle', { cx: '12', cy: '17', r: '1.5', fill: 'currentColor' })
+        ]
+      })
     }
   ];
 
   return p.jsxs('section', {
     id: 'metodo',
-    className: 'py-28 md:py-36 bg-white border-b border-brand-slate/10',
+    className: 'metodo-section-refined',
     children: [
       p.jsxs('div', {
         className: 'max-w-[1440px] mx-auto px-6 md:px-12',
         children: [
           p.jsxs('div', {
-            className: 'max-w-2xl mb-16 md:mb-20',
+            className: 'editorial-split-header',
             children: [
               p.jsxs('div', {
-                className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
                 children: [
-                  p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                  'MÉTODO CAPIBARIBE'
+                  p.jsxs('div', {
+                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-4 font-semibold',
+                    children: [
+                      p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
+                      '04 // MÉTODO CAPIBARIBE'
+                    ]
+                  }),
+                  p.jsx('h2', {
+                    className: 'font-heading font-light text-slate-900 text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-[1.15]',
+                    children: 'Estratégia não termina na recomendação.'
+                  })
                 ]
               }),
-              p.jsx('h2', {
-                className: 'font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight mb-4',
-                children: 'Estratégia não termina na recomendação.'
-              }),
-              p.jsx('p', {
-                className: 'text-brand-slate text-base sm:text-lg leading-relaxed',
-                children: 'A Capibaribe Consultoria acompanha ativamente o caminho entre o diagnóstico analítico e a entrega concreta do resultado financeiro.'
+              p.jsx('div', {
+                className: 'pt-2 md:pt-8',
+                children: p.jsx('p', {
+                  className: 'text-slate-600 text-base md:text-lg leading-relaxed',
+                  children: 'A Capibaribe Consultoria acompanha ativamente o caminho entre o diagnóstico analítico e a entrega concreta do resultado financeiro, garantindo viabilidade e perenidade operacional.'
+                })
               })
             ]
           }),
           p.jsx('div', {
-            className: 'metodo-grid',
+            className: 'metodo-cards-grid',
             children: steps.map((s) =>
               p.jsxs('div', {
                 key: s.num,
-                className: 'metodo-card',
+                className: 'metodo-card-refined group',
                 children: [
                   p.jsxs('div', {
                     children: [
-                      p.jsx('span', {
-                        className: 'block font-mono text-2xl md:text-3xl font-bold text-brand-teal mb-4',
-                        children: s.num
+                      p.jsxs('div', {
+                        className: 'flex items-center justify-between mb-6',
+                        children: [
+                          p.jsx('div', {
+                            className: 'mono-icon-box-light',
+                            children: s.icon
+                          }),
+                          p.jsx('span', {
+                            className: 'font-mono text-2xl font-bold text-slate-300 group-hover:text-brand-teal transition-colors',
+                            children: s.num
+                          })
+                        ]
                       }),
                       p.jsx('h3', {
-                        className: 'font-heading font-semibold text-xl text-brand-navy mb-3',
+                        className: 'font-heading font-semibold text-lg md:text-xl text-slate-900 mb-3',
                         children: s.title
                       }),
                       p.jsx('p', {
-                        className: 'text-brand-slate text-sm sm:text-[0.95rem] leading-relaxed',
+                        className: 'text-slate-600 text-sm leading-relaxed mb-6',
                         children: s.desc
                       })
                     ]
                   }),
                   p.jsxs('div', {
-                    className: 'pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-slate/60 font-mono uppercase tracking-wider',
+                    className: 'pt-4 border-t border-slate-200/80 flex items-center justify-between font-mono text-[0.65rem] uppercase tracking-wider text-slate-500',
                     children: [
-                      'Fase ' + s.num,
-                      p.jsx('span', { className: 'text-brand-teal', children: '✓' })
+                      s.phase,
+                      p.jsx('span', { className: 'text-brand-teal font-bold', children: '✓' })
                     ]
                   })
                 ]
@@ -1889,48 +1971,166 @@ function MetodoSection(){
 
 function ResultadosSection(){
   const territories = [
-    { tag: '01 / ESTRATÉGIA', label: 'CAPITAL & FUNDING', desc: 'Estruturação de operações financeiras e acesso a instrumentos de fomento.' },
-    { tag: '02 / SETORES', label: 'PROJETOS', desc: 'Atuação multissetorial em indústria, agronegócio, infraestrutura e serviços.' },
-    { tag: '03 / GOVERNANÇA', label: 'INTELIGÊNCIA', desc: 'Estratégia financeira, governança e inteligência tributária.' },
-    { tag: '04 / ALCANCE', label: 'ATUAÇÃO', desc: 'Pernambuco, Norte/Nordeste e projetos de alcance nacional.' }
+    {
+      tag: '01 / ESTRATÉGIA',
+      label: 'CAPITAL & FUNDING',
+      desc: 'Estruturação de operações financeiras complexas, captação de recursos de longo prazo e acesso qualificado a instrumentos de fomento.',
+      badges: ['BNDES', 'BNB', 'BASA', 'DEBÊNTURES'],
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('rect', { x: '3', y: '4', width: '18', height: '16', rx: '2', strokeOpacity: '0.5' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '4', stroke: '#2ABBA7', className: 'anim-pulse' }),
+          p.jsx('line', { x1: '12', y1: '8', x2: '12', y2: '16', strokeOpacity: '0.4' }),
+          p.jsx('line', { x1: '8', y1: '12', x2: '16', y2: '12', strokeOpacity: '0.4' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '1.5', fill: '#2ABBA7' })
+        ]
+      })
+    },
+    {
+      tag: '02 / SETORES',
+      label: 'PROJETOS MULTISSETORIAIS',
+      desc: 'Atuação multissetorial direcionada a grupos econômicos da indústria de transformação, agronegócio, logística e infraestrutura.',
+      badges: ['INDÚSTRIA', 'AGRO', 'LOGÍSTICA', 'INFRA'],
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '12', cy: '7', r: '1.5', fill: '#2ABBA7', className: 'anim-pulse' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '1.5', fill: '#2ABBA7', className: 'anim-pulse' }),
+          p.jsx('circle', { cx: '12', cy: '17', r: '1.5', fill: '#2ABBA7', className: 'anim-pulse' })
+        ]
+      })
+    },
+    {
+      tag: '03 / GOVERNANÇA',
+      label: 'INTELIGÊNCIA TRIBUTÁRIA',
+      desc: 'Diagnóstico fiscal 360°, enquadramento em incentivos fiscais regionais e conversão de passivos em capacidade de reinvestimento.',
+      badges: ['SUDENE', 'PRODEPE', 'COMPLIANCE'],
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', strokeOpacity: '0.5' }),
+          p.jsx('g', {
+            className: 'anim-orbit',
+            children: [
+              p.jsx('polygon', { points: '12,7 16,12 12,17 8,12', stroke: '#2ABBA7', fill: 'none' })
+            ]
+          }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '1.5', fill: '#2ABBA7' })
+        ]
+      })
+    },
+    {
+      tag: '04 / ALCANCE',
+      label: 'PRESENÇA & ARTICULAÇÃO',
+      desc: 'Sede estratégica no Recife com capilaridade consolidada em todo o Norte/Nordeste e condução de operações em escala nacional.',
+      badges: ['RECIFE', 'NORDESTE', 'NORTE', 'NACIONAL'],
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('circle', { cx: '12', cy: '12', r: '9', strokeOpacity: '0.3' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '6', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '3', stroke: '#2ABBA7', className: 'anim-pulse' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '5', stroke: '#2ABBA7', strokeOpacity: '0.5', className: 'anim-beacon' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '1.5', fill: '#2ABBA7' })
+        ]
+      })
+    }
   ];
 
   return p.jsxs('section', {
-    className: 'py-28 md:py-36 bg-dark-section relative overflow-hidden',
+    id: 'atuacao-institucional',
+    className: 'institucional-section-refined',
     children: [
       p.jsxs('div', {
         className: 'max-w-[1440px] mx-auto px-6 md:px-12 relative z-10',
         children: [
           p.jsxs('div', {
-            className: 'max-w-2xl mb-16 md:mb-20',
+            className: 'capital-split-header',
             children: [
               p.jsxs('div', {
-                className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
                 children: [
-                  p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                  'ATUAÇÃO INSTITUCIONAL'
+                  p.jsxs('div', {
+                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-4 font-semibold',
+                    children: [
+                      p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
+                      '05 // ATUAÇÃO INSTITUCIONAL'
+                    ]
+                  }),
+                  p.jsx('h2', {
+                    className: 'font-heading font-light text-white text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-[1.15]',
+                    children: 'Capacidade técnica para destravar valor e sustentar decisões complexas.'
+                  })
                 ]
               }),
-              p.jsx('h2', {
-                className: 'font-heading font-semibold text-white text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight mb-4',
-                children: 'Capacidade técnica para destravar valor e sustentar decisões complexas.'
-              }),
-              p.jsx('p', {
-                className: 'text-white/70 text-base sm:text-lg leading-relaxed',
-                children: 'Atuamos na convergência entre modelagem econômico-financeira, fomento ao desenvolvimento e inteligência tributária.'
+              p.jsx('div', {
+                className: 'pt-2 md:pt-8',
+                children: p.jsx('p', {
+                  className: 'text-slate-300 text-base md:text-lg leading-relaxed',
+                  children: 'Atuamos na convergência entre modelagem econômico-financeira, fomento ao desenvolvimento regional e inteligência tributária com absoluto rigor metodológico.'
+                })
               })
             ]
           }),
           p.jsx('div', {
-            className: 'metrics-grid',
+            className: 'institucional-cards-grid',
             children: territories.map((t) =>
               p.jsxs('div', {
                 key: t.label,
-                className: 'metric-card',
+                className: 'institucional-card-refined group',
                 children: [
-                  p.jsx('span', { className: 'block font-mono text-xs uppercase tracking-[0.2em] text-brand-teal font-semibold mb-3', children: t.tag }),
-                  p.jsx('h3', { className: 'text-white font-heading font-semibold text-xl sm:text-2xl mb-3 tracking-[-0.02em]', children: t.label }),
-                  p.jsx('p', { className: 'text-white/70 text-sm sm:text-[0.95rem] leading-relaxed', children: t.desc })
+                  p.jsxs('div', {
+                    children: [
+                      p.jsxs('div', {
+                        className: 'flex items-center justify-between mb-6',
+                        children: [
+                          p.jsx('div', {
+                            className: 'mono-icon-box-dark',
+                            children: t.icon
+                          }),
+                          p.jsx('span', {
+                            className: 'font-mono text-xs uppercase tracking-widest text-brand-teal font-semibold',
+                            children: t.tag
+                          })
+                        ]
+                      }),
+                      p.jsx('h3', {
+                        className: 'font-heading font-semibold text-xl text-white mb-3 tracking-[-0.02em]',
+                        children: t.label
+                      }),
+                      p.jsx('p', {
+                        className: 'text-slate-300 text-sm leading-relaxed mb-6',
+                        children: t.desc
+                      })
+                    ]
+                  }),
+                  p.jsx('div', {
+                    className: 'pt-4 border-t border-white/10 flex flex-wrap gap-1.5',
+                    children: t.badges.map((b) =>
+                      p.jsx('span', {
+                        key: b,
+                        className: 'font-mono text-[0.62rem] uppercase tracking-wider px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10',
+                        children: b
+                      })
+                    )
+                  })
                 ]
               })
             )
@@ -1945,69 +2145,136 @@ function CasesSection(){
   const cases = [
     {
       sector: 'INDÚSTRIA DE TRANSFORMAÇÃO',
+      tag: 'REESTRUTURAÇÃO // FUNDING',
       title: 'Estruturação de Capital e Adequação de Passivos',
       desafio: 'Necessidade de adequação da estrutura financeira e do perfil de endividamento para sustentar planos de investimento operacional.',
       estrategia: 'Modelagem econômico-financeira detalhada, análise criteriosa de instrumentos de funding e interlocução técnica qualificada com instituições de fomento.',
-      resultado: 'Otimização da estrutura de liquidez e alinhamento do fluxo de caixa às necessidades de longo prazo da operação.'
+      resultado: 'Otimização da estrutura de liquidez e alinhamento do fluxo de caixa às necessidades de longo prazo da operação.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M2 20h20M4 20V8l6 4V4l10 8v8', strokeOpacity: '0.75' }),
+          p.jsx('line', { x1: '16', y1: '8', x2: '16', y2: '12', stroke: '#159793', className: 'anim-scan' }),
+          p.jsx('circle', { cx: '16', cy: '16', r: '1.5', fill: '#159793' })
+        ]
+      })
     },
     {
       sector: 'VAREJO & DISTRIBUIÇÃO',
-      title: 'Inteligência Fiscal e Incentivos Regionais (SUDENE / PRODEPE)',
+      tag: 'SUDENE // PRODEPE',
+      title: 'Inteligência Fiscal e Incentivos Regionais',
       desafio: 'Otimização fiscal e busca por competitividade tributária com segurança jurídica e conformidade regulatória.',
       estrategia: 'Diagnóstico tributário aprofundado, mapeamento de benefícios fiscais regionais aplicáveis e estruturação de pleito perante órgãos de desenvolvimento.',
-      resultado: 'Habilitação e enquadramento em incentivos fiscais regionais, assegurando eficiência tributária e competitividade sustentável.'
+      resultado: 'Habilitação e enquadramento em incentivos fiscais regionais, assegurando eficiência tributária e competitividade sustentável.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('circle', { cx: '12', cy: '12', r: '3', stroke: '#159793', className: 'anim-pulse' }),
+          p.jsx('circle', { cx: '4', cy: '6', r: '2', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '20', cy: '6', r: '2', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '4', cy: '18', r: '2', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '20', cy: '18', r: '2', strokeOpacity: '0.6' }),
+          p.jsx('line', { x1: '5.5', y1: '7.5', x2: '10', y2: '10.5', strokeOpacity: '0.4' }),
+          p.jsx('line', { x1: '18.5', y1: '7.5', x2: '14', y2: '10.5', strokeOpacity: '0.4' }),
+          p.jsx('line', { x1: '5.5', y1: '16.5', x2: '10', y2: '13.5', strokeOpacity: '0.4' }),
+          p.jsx('line', { x1: '18.5', y1: '16.5', x2: '14', y2: '13.5', strokeOpacity: '0.4' })
+        ]
+      })
     },
     {
       sector: 'AGRONEGÓCIO & INFRAESTRUTURA',
+      tag: 'EVTE // BNDES & BNB',
       title: 'Financiamento de Longo Prazo para Expansão',
       desafio: 'Estruturação de viabilidade técnica e financeira para implantação de novos ativos industriais e projetos de infraestrutura.',
       estrategia: 'Elaboração completa de Estudo de Viabilidade Técnica e Econômica (EVTE) aderente às diretrizes de agentes financeiros (BNDES, BNB e FINEP).',
-      resultado: 'Estruturação integral do projeto e encaminhamento técnico do plano de investimentos para expansão das operações.'
+      resultado: 'Estruturação integral do projeto e encaminhamento técnico do plano de investimentos para expansão das operações.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M3 20h18M4 16c4-3 8-3 16 0M4 12c4-2 8-2 16 0', strokeOpacity: '0.4' }),
+          p.jsx('line', { x1: '12', y1: '4', x2: '12', y2: '20', stroke: '#159793', strokeWidth: '1.6' }),
+          p.jsx('line', { x1: '12', y1: '6', x2: '6', y2: '16', strokeOpacity: '0.6' }),
+          p.jsx('line', { x1: '12', y1: '6', x2: '18', y2: '16', strokeOpacity: '0.6' }),
+          p.jsx('circle', { cx: '12', cy: '5', r: '1.5', fill: '#159793', className: 'anim-pulse' })
+        ]
+      })
     }
   ];
 
   return p.jsxs('section', {
     id: 'cases',
-    className: 'py-28 md:py-36 bg-[#F8FAFC] border-b border-brand-slate/10',
+    className: 'cases-section-refined',
     children: [
       p.jsxs('div', {
         className: 'max-w-[1440px] mx-auto px-6 md:px-12',
         children: [
           p.jsxs('div', {
-            className: 'max-w-2xl mb-16 md:mb-20',
+            className: 'editorial-split-header',
             children: [
               p.jsxs('div', {
-                className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
                 children: [
-                  p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                  'CASES DE SUCESSO'
+                  p.jsxs('div', {
+                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-4 font-semibold',
+                    children: [
+                      p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
+                      '06 // CASUÍSTICA ESTRUTURAL'
+                    ]
+                  }),
+                  p.jsx('h2', {
+                    className: 'font-heading font-light text-slate-900 text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-[1.15]',
+                    children: 'Decisões que transformaram realidades empresariais.'
+                  })
                 ]
               }),
-              p.jsx('h2', {
-                className: 'font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight mb-4',
-                children: 'Decisões que transformaram realidades empresariais.'
-              }),
-              p.jsx('p', {
-                className: 'text-brand-slate text-base sm:text-lg leading-relaxed',
-                children: 'A forma como estruturamos soluções reflete diretamente na liquidez, governança e competitividade dos nossos clientes.'
+              p.jsx('div', {
+                className: 'pt-2 md:pt-8',
+                children: p.jsx('p', {
+                  className: 'text-slate-600 text-base md:text-lg leading-relaxed',
+                  children: 'A forma como estruturamos soluções reflete diretamente na liquidez, governança e competitividade dos nossos clientes, sem promessas vazias e com foco estrito em entregas factuais.'
+                })
               })
             ]
           }),
           p.jsx('div', {
-            className: 'cases-grid',
+            className: 'cases-cards-grid',
             children: cases.map((cs) =>
               p.jsxs('div', {
                 key: cs.title,
-                className: 'case-card p-8',
+                className: 'case-card-refined group',
                 children: [
                   p.jsxs('div', {
                     children: [
+                      p.jsxs('div', {
+                        className: 'flex items-center justify-between mb-6 pb-4 border-b border-slate-100',
+                        children: [
+                          p.jsx('div', {
+                            className: 'mono-icon-box-light',
+                            children: cs.icon
+                          }),
+                          p.jsx('span', {
+                            className: 'font-mono text-[0.65rem] uppercase tracking-wider text-slate-400 font-semibold',
+                            children: cs.tag
+                          })
+                        ]
+                      }),
                       p.jsx('span', {
-                        className: 'inline-block font-mono text-[0.7rem] uppercase tracking-[0.2em] text-brand-teal font-bold mb-4',
+                        className: 'inline-block font-mono text-[0.68rem] uppercase tracking-[0.2em] text-brand-teal font-bold mb-2',
                         children: cs.sector
                       }),
                       p.jsx('h3', {
-                        className: 'font-heading font-semibold text-xl text-brand-navy mb-6 leading-snug',
+                        className: 'font-heading font-semibold text-xl text-slate-900 mb-6 leading-snug',
                         children: cs.title
                       }),
                       p.jsxs('div', {
@@ -2015,14 +2282,14 @@ function CasesSection(){
                         children: [
                           p.jsxs('div', {
                             children: [
-                              p.jsx('span', { className: 'block font-mono text-[0.68rem] uppercase tracking-wider text-brand-slate/60 font-semibold mb-1', children: 'Desafio' }),
-                              p.jsx('p', { className: 'text-brand-slate text-sm leading-relaxed', children: cs.desafio })
+                              p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-slate-400 font-semibold mb-1', children: '01 // Desafio' }),
+                              p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.desafio })
                             ]
                           }),
                           p.jsxs('div', {
                             children: [
-                              p.jsx('span', { className: 'block font-mono text-[0.68rem] uppercase tracking-wider text-brand-teal font-semibold mb-1', children: 'Estratégia' }),
-                              p.jsx('p', { className: 'text-brand-slate text-sm leading-relaxed', children: cs.estrategia })
+                              p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-brand-teal font-semibold mb-1', children: '02 // Estratégia Capibaribe' }),
+                              p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: cs.estrategia })
                             ]
                           })
                         ]
@@ -2030,10 +2297,10 @@ function CasesSection(){
                     ]
                   }),
                   p.jsxs('div', {
-                    className: 'pt-5 border-t border-slate-100',
+                    className: 'pt-5 border-t border-slate-200/80',
                     children: [
-                      p.jsx('span', { className: 'block font-mono text-[0.68rem] uppercase tracking-wider text-brand-navy font-bold mb-1', children: 'Resultado' }),
-                      p.jsx('p', { className: 'text-brand-navy font-medium text-sm leading-relaxed', children: cs.resultado })
+                      p.jsx('span', { className: 'block font-mono text-[0.65rem] uppercase tracking-wider text-slate-900 font-bold mb-1', children: '03 // Impacto Estrutural' }),
+                      p.jsx('p', { className: 'text-slate-800 font-medium text-sm leading-relaxed', children: cs.resultado })
                     ]
                   })
                 ]
@@ -2050,71 +2317,158 @@ function ExpertiseSection(){
   const pillars = [
     {
       title: 'Visão 360°',
-      desc: 'Não apenas captamos recursos ou revisamos impostos isoladamente — articulamos estrutura de capital, eficiência fiscal e governança corporativa em uma única estratégia convergente.'
+      desc: 'Não apenas captamos recursos ou revisamos impostos isoladamente — articulamos estrutura de capital, eficiência fiscal e governança corporativa em uma única estratégia convergente.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('circle', { cx: '12', cy: '12', r: '9', strokeOpacity: '0.35' }),
+          p.jsx('ellipse', { cx: '12', cy: '12', rx: '9', ry: '4', stroke: '#159793', className: 'anim-orbit' }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '2.5', fill: 'currentColor' })
+        ]
+      })
     },
     {
       title: 'Trânsito Institucional Qualificado',
-      desc: 'Atuação técnica e protocolar junto às principais instituições de fomento do Brasil: BNDES, Banco do Nordeste (BNB), BASA, FINEP, SUDENE e secretarias estaduais de fazenda.'
+      desc: 'Atuação técnica e protocolar junto às principais instituições de fomento do Brasil: BNDES, Banco do Nordeste (BNB), BASA, FINEP, SUDENE e secretarias estaduais de fazenda.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('path', { d: 'M3 21h18M5 10v9M9 10v9M15 10v9M19 10v9M2 6l10-4 10 4v2H2V6z', strokeOpacity: '0.8' }),
+          p.jsx('circle', { cx: '12', cy: '14.5', r: '1.5', fill: '#159793', className: 'anim-pulse' })
+        ]
+      })
     },
     {
       title: 'Presença Regional & Alcance Nacional',
-      desc: 'Sediada em Pernambuco, com sólida inserção no ecossistema econômico do Norte/Nordeste e capacidade de estruturação de operações em âmbito nacional.'
+      desc: 'Sediada em Pernambuco, com sólida inserção no ecossistema econômico do Norte/Nordeste e capacidade de estruturação de operações em âmbito nacional.',
+      icon: p.jsxs('svg', {
+        className: 'w-6 h-6',
+        viewBox: '0 0 24 24',
+        fill: 'none',
+        stroke: 'currentColor',
+        strokeWidth: '1.4',
+        children: [
+          p.jsx('circle', { cx: '12', cy: '12', r: '9', strokeOpacity: '0.35' }),
+          p.jsx('g', {
+            className: 'anim-orbit',
+            children: [
+              p.jsx('polygon', { points: '12,4 14.5,12 12,20 9.5,12', stroke: '#159793', fill: 'none' })
+            ]
+          }),
+          p.jsx('circle', { cx: '12', cy: '12', r: '1.5', fill: '#159793' })
+        ]
+      })
     }
   ];
 
   return p.jsxs('section', {
     id: 'sobre',
-    className: 'py-28 md:py-36 bg-white border-b border-brand-slate/10',
+    className: 'sobre-section-refined',
     children: [
       p.jsxs('div', {
         className: 'max-w-[1440px] mx-auto px-6 md:px-12',
         children: [
           p.jsxs('div', {
-            className: 'split-row',
+            className: 'sobre-grid',
             children: [
               p.jsxs('div', {
-                className: 'split-col',
                 children: [
                   p.jsxs('div', {
-                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
+                    className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.28em] text-brand-teal mb-4 font-semibold',
                     children: [
                       p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                      'SOBRE A CAPIBARIBE'
+                      '07 // SOBRE A CAPIBARIBE'
                     ]
                   }),
                   p.jsx('h2', {
-                    className: 'font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight mb-6',
-                    children: 'Nascida no Recife, a Capibaribe Consultoria combina inteligência financeira, tributária e estratégica para apoiar decisões empresariais de alto impacto.'
+                    className: 'font-heading font-light text-slate-900 text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-[1.15] mb-6',
+                    children: 'Nascida no Recife, a Capibaribe Consultoria combina inteligência financeira, tributária e estratégica.'
                   }),
                   p.jsx('p', {
-                    className: 'text-brand-slate text-base sm:text-lg leading-relaxed mb-8',
+                    className: 'text-slate-600 text-base md:text-lg leading-relaxed mb-8',
                     children: 'Atuamos como parceiro estratégico para empresas que buscam estruturar seu crescimento, otimizar sua estrutura de capital e navegar com segurança pelo ambiente fiscal e de fomento no Brasil.'
                   }),
                   p.jsx('div', {
-                    className: 'space-y-6',
+                    className: 'space-y-4',
                     children: pillars.map((pl) =>
                       p.jsxs('div', {
                         key: pl.title,
-                        className: 'p-6 rounded-xl bg-[#F8FAFC] border border-brand-slate/10',
+                        className: 'sobre-pillar-refined group',
                         children: [
-                          p.jsx('h3', { className: 'font-heading font-semibold text-lg text-brand-navy mb-2', children: pl.title }),
-                          p.jsx('p', { className: 'text-brand-slate text-sm leading-relaxed', children: pl.desc })
+                          p.jsx('div', {
+                            className: 'mono-icon-box-light',
+                            children: pl.icon
+                          }),
+                          p.jsxs('div', {
+                            className: 'flex-1',
+                            children: [
+                              p.jsx('h3', { className: 'font-heading font-semibold text-base md:text-lg text-slate-900 mb-1.5', children: pl.title }),
+                              p.jsx('p', { className: 'text-slate-600 text-sm leading-relaxed', children: pl.desc })
+                            ]
+                          })
                         ]
                       })
                     )
                   })
                 ]
               }),
-              p.jsx('div', {
-                className: 'split-col',
-                children: p.jsx('div', {
-                  className: 'image-frame-editorial',
-                  children: p.jsx('img', {
-                    src: 'images/hero_recife_opcao_b.jpg',
-                    alt: 'Recife e o Rio Capibaribe',
-                    className: 'w-full h-full object-cover'
+              p.jsxs('div', {
+                className: 'flex flex-col gap-4',
+                children: [
+                  p.jsxs('div', {
+                    className: 'image-frame-editorial relative rounded-2xl overflow-hidden shadow-lg border border-slate-200/80',
+                    children: [
+                      p.jsx('img', {
+                        src: 'images/hero_recife_opcao_b.jpg',
+                        alt: 'Recife e o Rio Capibaribe',
+                        className: 'w-full h-[460px] md:h-[540px] object-cover'
+                      }),
+                      p.jsxs('div', {
+                        className: 'absolute bottom-4 left-4 right-4 bg-slate-950/85 backdrop-blur-md border border-white/10 rounded-xl px-5 py-3.5 flex items-center justify-between text-white',
+                        children: [
+                          p.jsxs('div', {
+                            children: [
+                              p.jsx('span', { className: 'block font-mono text-[0.62rem] uppercase tracking-[0.2em] text-brand-teal font-semibold', children: 'SEDE INSTITUCIONAL' }),
+                              p.jsx('span', { className: 'font-heading font-bold text-sm tracking-wide', children: 'RECIFE • PERNAMBUCO' })
+                            ]
+                          }),
+                          p.jsx('span', { className: 'font-mono text-xs text-white/50', children: '08° 03′ S / 34° 52′ W' })
+                        ]
+                      })
+                    ]
+                  }),
+                  p.jsxs('div', {
+                    className: 'grid grid-cols-3 gap-2 p-4 bg-slate-50 border border-slate-200/80 rounded-xl text-center',
+                    children: [
+                      p.jsxs('div', {
+                        children: [
+                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'ORIGEM' }),
+                          p.jsx('span', { className: 'font-heading font-semibold text-xs text-slate-800', children: 'RECIFE, PE' })
+                        ]
+                      }),
+                      p.jsxs('div', {
+                        children: [
+                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'ATUAÇÃO' }),
+                          p.jsx('span', { className: 'font-heading font-semibold text-xs text-slate-800', children: 'NORTE / NORDESTE' })
+                        ]
+                      }),
+                      p.jsxs('div', {
+                        children: [
+                          p.jsx('span', { className: 'block font-mono text-[0.6rem] uppercase tracking-wider text-slate-400', children: 'DISCIPLINA' }),
+                          p.jsx('span', { className: 'font-heading font-semibold text-xs text-slate-800', children: 'FINANCE & TAX' })
+                        ]
+                      })
+                    ]
                   })
-                })
+                ]
               })
             ]
           })

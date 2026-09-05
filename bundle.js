@@ -883,39 +883,113 @@ return p.jsxs("section",{className:"hero-editorial-section",children:[
   ]})})
 ]})}
 function ManifestoSection(){
-return p.jsxs("section",{id:"manifesto",className:"relative bg-slate-50 py-36 md:py-48 lg:py-56 overflow-hidden border-b border-brand-slate/10",children:[
-  p.jsxs("div",{className:"max-w-[1440px] mx-auto px-6 md:px-12",children:[
-    // Eyebrow
-    p.jsxs(xn.div,{initial:{opacity:0,y:16},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6},className:"inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal font-semibold mb-8 md:mb-12",children:[
-      p.jsx("span",{className:"w-8 h-px bg-brand-teal"}),
-      "MANIFESTO"
-    ]}),
-
-    // Headline
-    p.jsxs(xn.h2,{
-      initial:{opacity:0,y:24},
-      whileInView:{opacity:1,y:0},
-      viewport:{once:!0,margin:"-60px"},
-      transition:{duration:.8,ease:[.16,1,.3,1]},
-      className:"manifesto-headline-editorial",
+  return p.jsx("section",{
+    id:"manifesto",
+    className:"manifesto-section-refined",
+    children:p.jsxs("div",{
+      className:"max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
       children:[
-        "Números contam histórias.",
-        p.jsx("br",{}),
-        "Nós ajudamos a transformá-los em decisões."
+        // Top Meta Line
+        p.jsxs("div",{
+          className:"manifesto-top-meta",
+          children:[
+            p.jsxs("div",{
+              className:"inline-flex items-center gap-3 font-mono-tech text-[0.7rem] uppercase tracking-[0.3em] text-brand-teal font-semibold",
+              children:[
+                p.jsx("span",{className:"w-2 h-2 rounded-full bg-brand-teal"}),
+                "01 // MANIFESTO INSTITUCIONAL"
+              ]
+            }),
+            p.jsx("span",{
+              className:"font-mono-tech text-[0.7rem] uppercase tracking-[0.2em] text-slate-400 hidden sm:inline",
+              children:"CAPIBARIBE CONSULTORIA"
+            })
+          ]
+        }),
+        // 2-Column Minimalist Grid
+        p.jsxs("div",{
+          className:"manifesto-grid",
+          children:[
+            // Left Statement Principal
+            p.jsxs("div",{
+              children:[
+                p.jsxs("h2",{
+                  className:"manifesto-title-large",
+                  children:[
+                    "Números contam histórias.",
+                    p.jsx("br",{}),
+                    p.jsx("span",{
+                      className:"text-slate-400 font-normal",
+                      children:"Nós estruturamos as decisões que movem o futuro das empresas."
+                    })
+                  ]
+                }),
+                p.jsxs("div",{
+                  className:"mt-8 md:mt-12 flex items-center gap-4 text-xs font-mono-tech text-slate-500",
+                  children:[
+                    p.jsx("span",{className:"w-8 h-px bg-brand-teal"}),
+                    p.jsx("span",{children:"DISCIPLINA ANALÍTICA • RIGOR TÉCNICO • ALCANCE NACIONAL"})
+                  ]
+                })
+              ]
+            }),
+            // Right: Pilares do Manifesto
+            p.jsxs("div",{
+              className:"space-y-8 lg:pl-4",
+              children:[
+                p.jsx("p",{
+                  className:"text-slate-600 text-lg md:text-xl font-normal leading-relaxed",
+                  children:"A complexidade econômica e tributária do Brasil não permite improviso. Conectamos inteligência analítica, governança fiscal e estratégia de capital para transformar incerteza em decisões seguras e crescimento sustentável."
+                }),
+                p.jsxs("div",{
+                  className:"space-y-6 pt-6 border-t border-slate-200",
+                  children:[
+                    p.jsxs("div",{
+                      className:"flex items-start gap-4",
+                      children:[
+                        p.jsx("span",{className:"font-mono-tech text-xs text-brand-teal font-semibold pt-1",children:"01.1"}),
+                        p.jsxs("div",{
+                          children:[
+                            p.jsx("h3",{className:"text-sm font-semibold text-brand-navy uppercase tracking-wider mb-1",children:"Clareza Operacional"}),
+                            p.jsx("p",{className:"text-sm text-slate-500 leading-relaxed",children:"Previsibilidade de liquidez e fluxo de caixa projetado para sustentar planos sem sobressaltos."})
+                          ]
+                        })
+                      ]
+                    }),
+                    p.jsxs("div",{
+                      className:"flex items-start gap-4",
+                      children:[
+                        p.jsx("span",{className:"font-mono-tech text-xs text-brand-teal font-semibold pt-1",children:"01.2"}),
+                        p.jsxs("div",{
+                          children:[
+                            p.jsx("h3",{className:"text-sm font-semibold text-brand-navy uppercase tracking-wider mb-1",children:"Segurança Estrutural"}),
+                            p.jsx("p",{className:"text-sm text-slate-500 leading-relaxed",children:"Governança fiscal e inteligência tributária integradas ao planejamento corporativo de longo prazo."})
+                          ]
+                        })
+                      ]
+                    }),
+                    p.jsxs("div",{
+                      className:"flex items-start gap-4",
+                      children:[
+                        p.jsx("span",{className:"font-mono-tech text-xs text-brand-teal font-semibold pt-1",children:"01.3"}),
+                        p.jsxs("div",{
+                          children:[
+                            p.jsx("h3",{className:"text-sm font-semibold text-brand-navy uppercase tracking-wider mb-1",children:"Solidez no Capital"}),
+                            p.jsx("p",{className:"text-sm text-slate-500 leading-relaxed",children:"Ponte técnica qualificada com bancos de desenvolvimento e agentes de fomento nacional."})
+                          ]
+                        })
+                      ]
+                    })
+                  ]
+                })
+              ]
+            })
+          ]
+        })
       ]
-    }),
-
-    // Supporting text
-    p.jsx(xn.p,{
-      initial:{opacity:0,y:20},
-      whileInView:{opacity:1,y:0},
-      viewport:{once:!0},
-      transition:{duration:.8,delay:.2},
-      className:"text-brand-slate text-lg sm:text-xl md:text-2xl font-normal leading-relaxed max-w-[620px] mt-10 md:mt-14",
-      children:"A Capibaribe combina inteligência financeira, tributária e estratégica para ajudar empresas a ganhar eficiência, estruturar crescimento e tomar decisões com mais segurança."
     })
-  ]})
-]})}
+  });
+}
 
 function Xa({eyebrow:e,title:t,description:n,align:r="left",light:i=!1,className:a=""}){const o=r==="center"?"text-center mx-auto items-center":"text-left items-start";return p.jsxs("div",{className:`flex flex-col gap-4 max-w-2xl ${o} ${a}`,children:[e&&p.jsxs("div",{className:"inline-flex items-center gap-2 font-mono-tech text-xs tracking-[0.2em] uppercase text-brand-teal",children:[p.jsx("span",{className:"h-px w-6 bg-brand-teal"}),e]}),p.jsx("h2",{className:`font-heading font-bold text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.1] text-balance ${i?"text-white":"text-brand-navy"}`,children:t}),n&&p.jsx("p",{className:`text-lg leading-relaxed ${i?"text-white/70":"text-brand-slate"}`,children:n})]})};
 const Yoe=[{icon:jG,title:"Visão 360°",text:"Não apenas captamos o recurso — otimizamos a carga tributária e planejamos passivos em todas as frentes."},{icon:mX,title:"Trânsito Institucional",text:"Atuação qualificada junto a BNDES, BNB, BASA, FINEP e agências de fomento estaduais."},{icon:CX,title:"Raízes & Alcance",text:"Identidade pernambucana ligada ao Rio Capibaribe, com visão e operação de alcance nacional."}];
@@ -1191,124 +1265,532 @@ A glosa dos incentivos da Lei do Bem pela Receita Federal pode gerar autuações
 ## Inovação como motor de crescimento
 
 Quando bem estruturado, o fomento à inovação deixa de ser um benefício pontual e torna-se um motor de crescimento seguro e sustentado — financiando investimentos de longo prazo com taxas subsidiadas e carências estendidas.`}];function ase(e){return new Date(e).toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"})}function ose(){const e=_g.slice(0,3);return p.jsx("section",{id:"blog",className:"relative py-20 md:py-28 bg-brand-surface overflow-hidden",children:p.jsxs("div",{className:"max-w-7xl mx-auto px-4 md:px-8",children:[p.jsxs("div",{className:"flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10",children:[p.jsx(Xa,{eyebrow:"Blog Técnico",title:"Inteligência aplicada ao capital",description:"Análises sobre PPPs, linhas de crédito, legislação tributária e orçamentária — atualizações que orientam decisões."}),p.jsxs(Mt,{to:"/blog",className:"inline-flex items-center gap-2 text-brand-navy font-semibold text-sm border-b-2 border-brand-teal pb-1 hover:gap-3 transition-all self-start",children:["Todos os artigos ",p.jsx(za,{className:"w-4 h-4 text-brand-teal"})]})]}),p.jsx("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-5",children:e.map((t,n)=>p.jsx(xn.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.5,delay:n*.06},children:p.jsxs(Mt,{to:`/blog/${t.slug}`,className:"group block bg-white border border-brand-slate/15 rounded-2xl overflow-hidden hover:border-brand-teal/40 transition-colors h-full",children:[p.jsxs("div",{className:"relative h-48 overflow-hidden",children:[p.jsx("img",{src:t.image,alt:t.title,className:"w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"}),p.jsx("div",{className:"absolute inset-0 bg-gradient-to-t from-brand-ink/50 to-transparent"}),p.jsx("span",{className:"absolute top-3 left-3 font-mono-tech text-[0.6rem] uppercase tracking-wider px-2.5 py-1 rounded bg-brand-teal text-brand-navy font-bold",children:t.category})]}),p.jsxs("div",{className:"p-5 flex flex-col",children:[p.jsxs("div",{className:"flex items-center gap-3 text-xs text-brand-slate mb-2",children:[p.jsx("span",{children:ase(t.date)}),p.jsxs("span",{className:"flex items-center gap-1",children:[p.jsx(Vo,{className:"w-3 h-3"})," ",t.readTime]})]}),p.jsx("h3",{className:"font-heading font-bold text-base text-brand-navy leading-snug mb-2 group-hover:text-brand-teal-dark transition-colors",children:t.title}),p.jsx("p",{className:"text-brand-slate text-[0.85rem] leading-relaxed line-clamp-2 flex-1",children:t.excerpt}),p.jsxs("span",{className:"mt-4 inline-flex items-center gap-1.5 text-brand-teal-dark font-semibold text-xs",children:["Ler artigo ",p.jsx(za,{className:"w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"})]})]})]})},t.slug))})]})})}const sse=[{id:"1",image:"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=400&fit=crop",caption:"Entenda como estruturar um Project Finance no Brasil e isolar riscos via SPE. #ProjectFinance #BNDES",likes:84,link:"https://www.instagram.com/capibaribeconsultoria/"},{id:"2",image:"https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=400&fit=crop",caption:"SUDENE: 75% de redução no IR para empresas no Nordeste. Você já verificou se a sua empresa se enquadra?",likes:127,link:"https://www.instagram.com/capibaribeconsultoria/"},{id:"3",image:"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=400&fit=crop",caption:"PPPs e concessões: como o setor privado pode captar recursos para projetos de infraestrutura pública.",likes:96,link:"https://www.instagram.com/capibaribeconsultoria/"},{id:"4",image:"https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=400&h=400&fit=crop",caption:"Emendas parlamentares impositivas: o que mudou com a EC 105/2019 e como aproveitar para municípios.",likes:61,link:"https://www.instagram.com/capibaribeconsultoria/"},{id:"5",image:"https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=400&fit=crop",caption:"Fintech e inovação: como a Lei do Bem pode financiar até 60% do seu projeto de P&D via FINEP.",likes:73,link:"https://www.instagram.com/capibaribeconsultoria/"},{id:"6",image:"https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=400&fit=crop",caption:"Planejamento orçamentário público: PPA, LDO e LOA alinhados para maximizar a execução de obras.",likes:88,link:"https://www.instagram.com/capibaribeconsultoria/"}];function lse(){return p.jsx("section",{id:"instagram",className:"relative py-20 md:py-28 bg-brand-surface overflow-hidden",children:p.jsxs("div",{className:"max-w-7xl mx-auto px-4 md:px-8",children:[p.jsxs("div",{className:"flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10",children:[p.jsx(Xa,{eyebrow:"Instagram",title:"Inteligência financeira no dia a dia",description:"Conteúdo técnico sobre captação, tributação e estruturação de projetos."}),p.jsxs("a",{href:"https://www.instagram.com/capibaribeconsultoria/",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-2 bg-brand-navy text-white font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-brand-navy/80 transition-colors self-start",children:[p.jsx(q_,{className:"w-4.5 h-4.5"}),"@capibaribeconsultoria",p.jsx(kG,{className:"w-3.5 h-3.5 opacity-60"})]})]}),p.jsx("div",{className:"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3",children:sse.map(e=>p.jsxs("a",{href:e.link,target:"_blank",rel:"noopener noreferrer",className:"group relative aspect-square rounded-2xl overflow-hidden bg-brand-slate/10",children:[p.jsx("img",{src:e.image,alt:e.caption,className:"w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"}),p.jsx("div",{className:"absolute inset-0 bg-brand-ink/0 group-hover:bg-brand-ink/60 transition-all duration-300 flex items-center justify-center",children:p.jsxs("div",{className:"opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-3",children:[p.jsx(q_,{className:"w-5 h-5 text-white mx-auto mb-1.5"}),p.jsx("p",{className:"text-white text-[0.65rem] leading-tight line-clamp-3",children:e.caption})]})}),p.jsx("div",{className:"absolute top-2 right-2 w-2 h-2 rounded-full bg-brand-teal opacity-0 group-hover:opacity-100 transition-opacity"})]},e.id))})]})})}function Zo(){return p.jsxs("section",{className:"relative bg-brand-ink overflow-hidden",children:[p.jsx("img",{src:Ur.cableDetail,alt:"Cabos de ponte estaiada",className:"absolute inset-0 w-full h-full object-cover opacity-25"}),p.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-brand-ink via-brand-ink/85 to-brand-ink/60"}),p.jsx(Lj,{color:"#2ABBA7",opacity:.2,className:"absolute top-0"}),p.jsx("div",{className:"relative max-w-7xl mx-auto px-4 md:px-8 py-20 md:py-28",children:p.jsxs(xn.div,{initial:{opacity:0,y:24},whileInView:{opacity:1,y:0},viewport:{once:!0,margin:"-80px"},transition:{duration:.6},className:"max-w-2xl",children:[p.jsxs("div",{className:"inline-flex items-center gap-2 font-mono-tech text-xs uppercase tracking-[0.25em] text-brand-teal mb-4",children:[p.jsx("span",{className:"h-px w-6 bg-brand-teal/60"})," Diagnóstico Estratégico"]}),p.jsx("h2",{className:"font-heading font-extrabold text-3xl md:text-5xl text-white leading-[1.1] text-balance mb-5",children:"Vamos estruturar o caminho do capital para o seu projeto"}),p.jsx("p",{className:"text-white/65 text-lg leading-relaxed mb-8 max-w-xl",children:"Agende uma reunião de diagnóstico e receba uma avaliação preliminar das melhores fontes de financiamento e incentivos para a sua organização."}),p.jsxs("div",{className:"flex flex-col sm:flex-row gap-3",children:[p.jsxs(Mt,{to:"/contato",className:"inline-flex items-center justify-center gap-2 bg-brand-teal text-brand-navy font-bold px-6 py-3.5 rounded-xl hover:bg-brand-teal-light transition-colors shadow-lg shadow-brand-teal/20",children:[p.jsx(sg,{className:"w-5 h-5"})," Agendar Diagnóstico"]}),p.jsxs("a",{href:er.whatsapp,target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center justify-center gap-2 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-white/10 transition-colors",children:[p.jsx(zy,{className:"w-5 h-5 text-brand-teal"})," Falar no WhatsApp"]})]})]})})]})}function SolucoesChapters(){
-  const chapters = [
-    {
-      num: '01',
-      area: 'FINANCE',
-      title: 'Estrutura financeira para empresas que querem enxergar além do caixa.',
-      desc: 'Planejamento financeiro integrado, orçamento estratégico, FP&A, governança de caixa, BPO financeiro de alta precisão e modelagem de cenários para sustentação de decisões críticas.',
-      pills: ['Estruturação Financeira', 'Planejamento & Orçamento', 'FP&A & Modelagem', 'BPO Financeiro', 'Indicadores (KPIs)'],
-      img: 'images/hero_executive_editorial.jpg',
-      href: '/servicos#assessoria-financeira',
-      reverse: false
-    },
-    {
-      num: '02',
-      area: 'TAX',
-      title: 'Tributos tratados como inteligência competitiva, não apenas obrigação.',
-      desc: 'Diagnóstico tributário aprofundado, modelagem preventiva de passivos, recuperação de créditos fiscais e estruturação de incentivos fiscais regionais e estaduais de alto impacto (SUDENE / PRODEPE).',
-      pills: ['Inteligência Tributária', 'Incentivos SUDENE / PRODEPE', 'Diagnóstico Fiscal 360°', 'Eficiência & Passivos', 'Conformidade Fiscal'],
-      img: 'images/a72911bb2_generated_image.png',
-      href: '/servicos#consultoria-tributaria',
-      reverse: true
-    },
-    {
-      num: '03',
-      area: 'CAPITAL',
-      title: 'Capital certo para sustentar a próxima grande fase do negócio.',
-      desc: 'Atuação estratégica e qualificada junto aos principais bancos de fomento e desenvolvimento do Brasil (BNDES, BNB, BASA, FINEP), funding estruturado, valuation e viabilização de planos de expansão.',
-      pills: ['Captação & Fomento (BNDES, BNB)', 'Funding Estruturado', 'Valuation & M&A', 'Planos de Negócios & EVTE', 'Expansão de Ativos'],
-      img: 'images/c05510da3_generated_image.png',
-      href: '/servicos#estudos-economicos',
-      reverse: false
-    }
-  ];
-
-  return p.jsxs('section', {
-    id: 'solucoes',
-    className: 'py-28 md:py-36 bg-[#F8FAFC] border-b border-brand-slate/10',
+  return p.jsxs(p.Fragment, {
     children: [
-      p.jsxs('div', {
-        className: 'max-w-[1440px] mx-auto px-6 md:px-12',
+      // 1. ÁREAS DE ATUAÇÃO
+      p.jsxs("section", {
+        id: "atuacao",
+        className: "atuacao-section-refined",
         children: [
-          p.jsxs('div', {
-            className: 'max-w-2xl mb-20 md:mb-28',
+          // Anchor helper for #solucoes
+          p.jsx("div", { id: "solucoes" }),
+          p.jsxs("div", {
+            className: "max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
             children: [
-              p.jsxs('div', {
-                className: 'inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.3em] text-brand-teal mb-4 font-semibold',
+              p.jsxs("div", {
+                className: "flex flex-col md:flex-row md:items-end md:justify-between gap-8 pb-12 border-b border-slate-200",
                 children: [
-                  p.jsx('span', { className: 'w-6 h-px bg-brand-teal' }),
-                  'ÁREAS DE ATUAÇÃO'
-                ]
-              }),
-              p.jsx('h2', {
-                className: 'font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.03em] leading-tight',
-                children: 'Três disciplinas integradas para acelerar o crescimento com solidez.'
-              })
-            ]
-          }),
-          p.jsx('div', {
-            className: 'space-y-24 md:space-y-32',
-            children: chapters.map((c) =>
-              p.jsxs('div', {
-                key: c.area,
-                className: c.reverse ? 'split-row reverse' : 'split-row',
-                children: [
-                  p.jsxs('div', {
-                    className: 'split-col',
+                  p.jsxs("div", {
                     children: [
-                      p.jsxs('div', {
-                        className: 'inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-brand-teal font-bold mb-4',
+                      p.jsxs("div", {
+                        className: "inline-flex items-center gap-3 font-mono-tech text-[0.7rem] uppercase tracking-[0.3em] text-brand-teal font-semibold mb-4",
                         children: [
-                          p.jsx('span', { className: 'text-brand-slate/60', children: c.num }),
-                          p.jsx('span', { className: 'text-brand-slate/30', children: '•' }),
-                          c.area
+                          p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
+                          "02 // ÁREAS DE ATUAÇÃO"
                         ]
                       }),
-                      p.jsx('h3', {
-                        className: 'chapter-title-refined mb-6',
-                        children: c.title
-                      }),
-                      p.jsx('p', {
-                        className: 'text-brand-slate text-base sm:text-lg leading-relaxed mb-8 max-w-xl',
-                        children: c.desc
-                      }),
-                      p.jsx('div', {
-                        className: 'flex flex-wrap gap-2.5 mb-8',
-                        children: c.pills.map((pill) =>
-                          p.jsx('span', {
-                            key: pill,
-                            className: 'chapter-pill',
-                            children: pill
-                          })
-                        )
-                      }),
-                      p.jsxs(Mt, {
-                        to: c.href,
-                        className: 'inline-flex items-center gap-2 font-bold text-sm text-brand-teal hover:text-brand-teal-dark transition-colors group',
+                      p.jsx("h2", {
+                        className: "font-heading font-semibold text-brand-navy text-3xl sm:text-4xl md:text-5xl tracking-[-0.035em] leading-[1.1] max-w-2xl",
+                        children: "Três disciplinas integradas para dar tração e solidez ao seu negócio."
+                      })
+                    ]
+                  }),
+                  p.jsx("p", {
+                    className: "text-slate-500 text-base md:text-lg max-w-md font-normal leading-relaxed",
+                    children: "Uma abordagem multidisciplinar sem silos: unimos planejamento financeiro, conformidade fiscal e estruturação de fomento em uma mesma mesa estratégica."
+                  })
+                ]
+              }),
+              p.jsxs("div", {
+                className: "atuacao-cards-grid",
+                children: [
+                  // Card 1: FINANCE
+                  p.jsxs("div", {
+                    className: "atuacao-card group",
+                    children: [
+                      p.jsxs("div", {
+                        className: "atuacao-img-wrapper",
                         children: [
-                          'Explorar soluções em ' + c.area,
-                          p.jsx('span', { className: 'group-hover:translate-x-1.5 transition-transform', children: '→' })
+                          p.jsx("img", {
+                            src: "/images/atuacao_finance.jpg",
+                            alt: "Estrutura Financeira & FP&A"
+                          }),
+                          p.jsx("div", {
+                            className: "absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent pointer-events-none"
+                          }),
+                          p.jsx("span", {
+                            className: "atuacao-badge",
+                            children: "01 // FINANCE"
+                          })
+                        ]
+                      }),
+                      p.jsxs("div", {
+                        className: "p-6 md:p-7 flex flex-col flex-1 justify-between",
+                        children: [
+                          p.jsxs("div", {
+                            children: [
+                              p.jsx("h3", {
+                                className: "font-semibold text-xl text-brand-navy mb-2.5 group-hover:text-brand-teal transition-colors",
+                                children: "Estrutura Financeira & FP&A"
+                              }),
+                              p.jsx("p", {
+                                className: "text-sm text-slate-600 leading-relaxed mb-6",
+                                children: "Governança de caixa, controladoria dinâmica, orçamento estratégico e BPO financeiro para apoiar tomadas de decisão de alto impacto."
+                              })
+                            ]
+                          }),
+                          p.jsxs("div", {
+                            className: "pt-4 border-t border-slate-100 flex items-center justify-between text-xs",
+                            children: [
+                              p.jsx("span", {
+                                className: "font-mono-tech text-slate-400 uppercase tracking-wider",
+                                children: "Governança & Caixa"
+                              }),
+                              p.jsxs("a", {
+                                href: "#finance",
+                                className: "font-semibold text-brand-teal group-hover:translate-x-1 transition-transform inline-flex items-center gap-1",
+                                children: [
+                                  "Ver disciplina",
+                                  p.jsx(za, { className: "w-3.5 h-3.5" })
+                                ]
+                              })
+                            ]
+                          })
                         ]
                       })
                     ]
                   }),
-                  p.jsx('div', {
-                    className: 'split-col',
-                    children: p.jsx('div', {
-                      className: 'image-frame-editorial group',
-                      children: p.jsx('img', {
-                        src: c.img,
-                        alt: c.title,
-                        className: 'w-full h-full object-cover group-hover:scale-103 transition-transform duration-700 ease-out'
+                  // Card 2: TAX
+                  p.jsxs("div", {
+                    className: "atuacao-card group",
+                    children: [
+                      p.jsxs("div", {
+                        className: "atuacao-img-wrapper",
+                        children: [
+                          p.jsx("img", {
+                            src: "/images/atuacao_tax.jpg",
+                            alt: "Inteligência Tributária"
+                          }),
+                          p.jsx("div", {
+                            className: "absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent pointer-events-none"
+                          }),
+                          p.jsx("span", {
+                            className: "atuacao-badge",
+                            children: "02 // TAX"
+                          })
+                        ]
+                      }),
+                      p.jsxs("div", {
+                        className: "p-6 md:p-7 flex flex-col flex-1 justify-between",
+                        children: [
+                          p.jsxs("div", {
+                            children: [
+                              p.jsx("h3", {
+                                className: "font-semibold text-xl text-brand-navy mb-2.5 group-hover:text-brand-teal transition-colors",
+                                children: "Inteligência Tributária"
+                              }),
+                              p.jsx("p", {
+                                className: "text-sm text-slate-600 leading-relaxed mb-6",
+                                children: "Diagnóstico fiscal aprofundado, recuperação legítima de créditos e enquadramento em incentivos fiscais regionais (SUDENE e PRODEPE)."
+                              })
+                            ]
+                          }),
+                          p.jsxs("div", {
+                            className: "pt-4 border-t border-slate-100 flex items-center justify-between text-xs",
+                            children: [
+                              p.jsx("span", {
+                                className: "font-mono-tech text-slate-400 uppercase tracking-wider",
+                                children: "Conformidade & Valor"
+                              }),
+                              p.jsxs(Mt, {
+                                to: "/servicos#consultoria-tributaria",
+                                className: "font-semibold text-brand-teal group-hover:translate-x-1 transition-transform inline-flex items-center gap-1",
+                                children: [
+                                  "Ver disciplina",
+                                  p.jsx(za, { className: "w-3.5 h-3.5" })
+                                ]
+                              })
+                            ]
+                          })
+                        ]
                       })
-                    })
+                    ]
+                  }),
+                  // Card 3: CAPITAL
+                  p.jsxs("div", {
+                    className: "atuacao-card group",
+                    children: [
+                      p.jsxs("div", {
+                        className: "atuacao-img-wrapper",
+                        children: [
+                          p.jsx("img", {
+                            src: "/images/atuacao_capital.jpg",
+                            alt: "Captação & Fomento"
+                          }),
+                          p.jsx("div", {
+                            className: "absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent pointer-events-none"
+                          }),
+                          p.jsx("span", {
+                            className: "atuacao-badge",
+                            children: "03 // CAPITAL"
+                          })
+                        ]
+                      }),
+                      p.jsxs("div", {
+                        className: "p-6 md:p-7 flex flex-col flex-1 justify-between",
+                        children: [
+                          p.jsxs("div", {
+                            children: [
+                              p.jsx("h3", {
+                                className: "font-semibold text-xl text-brand-navy mb-2.5 group-hover:text-brand-teal transition-colors",
+                                children: "Captação & Fomento"
+                              }),
+                              p.jsx("p", {
+                                className: "text-sm text-slate-600 leading-relaxed mb-6",
+                                children: "Estruturação técnica para captação de recursos de longo prazo junto ao BNDES, BNB, BASA, FINEP e estudos de viabilidade (EVTE)."
+                              })
+                            ]
+                          }),
+                          p.jsxs("div", {
+                            className: "pt-4 border-t border-slate-100 flex items-center justify-between text-xs",
+                            children: [
+                              p.jsx("span", {
+                                className: "font-mono-tech text-slate-400 uppercase tracking-wider",
+                                children: "Fomento & Funding"
+                              }),
+                              p.jsxs("a", {
+                                href: "#capital",
+                                className: "font-semibold text-brand-teal group-hover:translate-x-1 transition-transform inline-flex items-center gap-1",
+                                children: [
+                                  "Ver disciplina",
+                                  p.jsx(za, { className: "w-3.5 h-3.5" })
+                                ]
+                              })
+                            ]
+                          })
+                        ]
+                      })
+                    ]
                   })
                 ]
               })
-            )
+            ]
           })
         ]
+      }),
+
+      // 2. SEÇÃO FINANCE
+      p.jsx("section", {
+        id: "finance",
+        className: "finance-section-refined",
+        children: p.jsxs("div", {
+          className: "max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
+          children: [
+            // Top Meta
+            p.jsxs("div", {
+              className: "flex flex-wrap items-center justify-between gap-3 mb-8 pb-5 border-b border-slate-100",
+              children: [
+                p.jsxs("div", {
+                  className: "flex items-center gap-3",
+                  children: [
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs font-bold text-brand-navy bg-slate-100 px-3 py-1 rounded-md",
+                      children: "DISCIPLINA 01"
+                    }),
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs uppercase tracking-[0.25em] text-brand-teal font-semibold",
+                      children: "FINANCE & FP&A"
+                    })
+                  ]
+                }),
+                p.jsxs(Mt, {
+                  to: "/servicos#assessoria-financeira",
+                  className: "text-xs font-semibold uppercase tracking-wider text-brand-teal hover:text-brand-navy transition-colors inline-flex items-center gap-1.5",
+                  children: [
+                    "Conhecer assessoria financeira",
+                    p.jsx(za, { className: "w-3 h-3" })
+                  ]
+                })
+              ]
+            }),
+            // Title & Context Grid
+            p.jsxs("div", {
+              className: "editorial-split-header",
+              children: [
+                p.jsxs("div", {
+                  children: [
+                    p.jsx("h3", {
+                      className: "text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-navy tracking-[-0.03em] leading-tight mb-6",
+                      children: "Estrutura financeira para empresas que precisam enxergar além do fluxo imediato de caixa."
+                    }),
+                    p.jsx("p", {
+                      className: "text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl",
+                      children: "Implementamos governança financeira de padrão executivo: planejamento integrado, orçamento dinâmico, modelagem de cenários e rotinas de tesouraria de alta precisão para dar previsibilidade à diretoria e aos conselhos."
+                    })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "bg-slate-50 border border-slate-200/80 rounded-2xl p-6 md:p-8",
+                  children: [
+                    p.jsx("div", {
+                      className: "font-mono-tech text-[0.65rem] uppercase tracking-[0.25em] text-slate-400 mb-2 font-semibold",
+                      children: "ENTREGA ESTRATÉGICA"
+                    }),
+                    p.jsx("p", {
+                      className: "text-brand-navy font-medium text-base mb-4 leading-snug",
+                      children: "Decisões de alocação de capital e precificação respaldadas em processos auditáveis."
+                    }),
+                    p.jsxs("div", {
+                      className: "flex flex-wrap gap-2 text-xs text-slate-600 font-mono-tech",
+                      children: [
+                        p.jsx("span", { className: "px-2.5 py-1 bg-white border border-slate-200 rounded-md", children: "FP&A Dinâmico" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-white border border-slate-200 rounded-md", children: "Orçamento Matricial" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-white border border-slate-200 rounded-md", children: "BPO Financeiro" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-white border border-slate-200 rounded-md", children: "Valuation" })
+                      ]
+                    })
+                  ]
+                })
+              ]
+            }),
+            // 4 Architectural Cards
+            p.jsxs("div", {
+              className: "finance-cards-grid",
+              children: [
+                p.jsxs("div", {
+                  className: "finance-card-arch",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "01.1 // CAIXA" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Estruturação de Caixa" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Gestão ativa de liquidez, ciclo operacional e capital de giro, mitigando descasamento entre compras e recebimentos." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Governança contínua" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "finance-card-arch",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "01.2 // FP&A" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "FP&A & Controladoria" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Modelagem financeira preditiva, orçamento matricial, relatórios executivos para conselho e acompanhamento de indicadores." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Decisão executiva" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "finance-card-arch",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "01.3 // BPO" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "BPO Consultivo" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Operação especializada de rotinas de tesouraria (contas a pagar, receber, conciliação e faturamento) com rigor e conformidade." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Eficiência de processo" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "finance-card-arch",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "01.4 // CENÁRIOS" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Modelagem & Valuation" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Avaliação de empresas pelo Fluxo de Caixa Descontado (DCF), múltiplos de mercado e testes de estresse para decisões societárias." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Visão de valor" })
+                  ]
+                })
+              ]
+            })
+          ]
+        })
+      }),
+
+      // 3. SEÇÃO CAPITAL (DARK REFINED CONTRAST)
+      p.jsx("section", {
+        id: "capital",
+        className: "capital-section-refined",
+        children: p.jsxs("div", {
+          className: "max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
+          children: [
+            // Top Meta
+            p.jsxs("div", {
+              className: "flex flex-wrap items-center justify-between gap-3 mb-8 pb-5 border-b border-white/10",
+              children: [
+                p.jsxs("div", {
+                  className: "flex items-center gap-3",
+                  children: [
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs font-bold text-white bg-white/10 px-3 py-1 rounded-md",
+                      children: "DISCIPLINA 03"
+                    }),
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs uppercase tracking-[0.25em] text-brand-teal font-semibold",
+                      children: "STRUCTURED CAPITAL & FOMENTO"
+                    })
+                  ]
+                }),
+                p.jsxs("a", {
+                  href: "#contato",
+                  className: "text-xs font-semibold uppercase tracking-wider text-brand-teal hover:text-white transition-colors inline-flex items-center gap-1.5",
+                  children: [
+                    "Consultar linhas de fomento",
+                    p.jsx(za, { className: "w-3 h-3" })
+                  ]
+                })
+              ]
+            }),
+            // Title & Overview Grid
+            p.jsxs("div", {
+              className: "capital-split-header",
+              children: [
+                p.jsxs("div", {
+                  children: [
+                    p.jsx("h3", {
+                      className: "text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-white tracking-[-0.03em] leading-tight mb-6",
+                      children: "O capital estruturado certo para sustentar a próxima grande fase do seu negócio."
+                    }),
+                    p.jsx("p", {
+                      className: "text-white/70 text-base sm:text-lg leading-relaxed max-w-3xl",
+                      children: "Estruturamos operações de captação de recursos de longo prazo, unindo crédito de desenvolvimento com condições favoráveis, linhas de incentivo à inovação e modelagem financeira para expansão de plantas, máquinas e novos ativos."
+                    })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "bg-white/[0.04] border border-white/10 rounded-2xl p-6 md:p-8",
+                  children: [
+                    p.jsx("div", {
+                      className: "font-mono-tech text-[0.65rem] uppercase tracking-[0.25em] text-brand-teal mb-2 font-semibold",
+                      children: "TRÂNSITO QUALIFICADO"
+                    }),
+                    p.jsx("p", {
+                      className: "text-white font-medium text-sm leading-relaxed mb-4",
+                      children: "Atuação técnica no enquadramento, estruturação e aprovação de pleitos junto aos principais agentes financeiros de desenvolvimento do país."
+                    }),
+                    p.jsx("div", {
+                      className: "text-xs text-white/50 font-mono-tech tracking-wider",
+                      children: "BNDES • BNB • BASA • FINEP • SUDENE"
+                    })
+                  ]
+                })
+              ]
+            }),
+            // 3 Strategic Funding Columns
+            p.jsxs("div", {
+              className: "capital-cards-grid",
+              children: [
+                // Col 1
+                p.jsxs("div", {
+                  className: "capital-col-dark",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("div", {
+                          className: "w-10 h-10 rounded-xl bg-brand-teal/15 flex items-center justify-center text-brand-teal font-mono-tech text-sm font-bold mb-6",
+                          children: "01"
+                        }),
+                        p.jsx("h4", { className: "text-xl font-semibold text-white mb-3", children: "Bancos de Desenvolvimento" }),
+                        p.jsxs("p", {
+                          className: "text-white/65 text-sm leading-relaxed mb-6",
+                          children: [
+                            "Estruturação completa de projetos para linhas de investimento de longo prazo do ",
+                            p.jsx("strong", { className: "text-white", children: "BNDES (Finame, Finem)" }),
+                            ", ",
+                            p.jsx("strong", { className: "text-white", children: "BNB (FNE)" }),
+                            " e ",
+                            p.jsx("strong", { className: "text-white", children: "BASA" }),
+                            ". Foco em prazos estendidos, carências e taxas atrativas."
+                          ]
+                        })
+                      ]
+                    }),
+                    p.jsxs("ul", {
+                      className: "space-y-2.5 text-xs text-white/50 font-mono-tech border-t border-white/10 pt-5",
+                      children: [
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Expansão fabril e infraestrutura"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Máquinas e equipamentos industriais"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Projetos regionais de fomento"] })
+                      ]
+                    })
+                  ]
+                }),
+                // Col 2
+                p.jsxs("div", {
+                  className: "capital-col-dark",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("div", {
+                          className: "w-10 h-10 rounded-xl bg-brand-teal/15 flex items-center justify-center text-brand-teal font-mono-tech text-sm font-bold mb-6",
+                          children: "02"
+                        }),
+                        p.jsx("h4", { className: "text-xl font-semibold text-white mb-3", children: "Inovação & Fomento Tecnológico" }),
+                        p.jsxs("p", {
+                          className: "text-white/65 text-sm leading-relaxed mb-6",
+                          children: [
+                            "Acesso a linhas especiais de financiamento à inovação, P&D e transformação digital via ",
+                            p.jsx("strong", { className: "text-white", children: "FINEP" }),
+                            ", ",
+                            p.jsx("strong", { className: "text-white", children: "EMBRAPII" }),
+                            " e instrumentos governamentais de fomento tecnológico."
+                          ]
+                        })
+                      ]
+                    }),
+                    p.jsxs("ul", {
+                      className: "space-y-2.5 text-xs text-white/50 font-mono-tech border-t border-white/10 pt-5",
+                      children: [
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Pesquisa e desenvolvimento aplicado"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Taxas de equalização subsidiadas"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Modernização e ativos digitais"] })
+                      ]
+                    })
+                  ]
+                }),
+                // Col 3
+                p.jsxs("div", {
+                  className: "capital-col-dark",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("div", {
+                          className: "w-10 h-10 rounded-xl bg-brand-teal/15 flex items-center justify-center text-brand-teal font-mono-tech text-sm font-bold mb-6",
+                          children: "03"
+                        }),
+                        p.jsx("h4", { className: "text-xl font-semibold text-white mb-3", children: "Estudos EVTE & Planos de Negócios" }),
+                        p.jsxs("p", {
+                          className: "text-white/65 text-sm leading-relaxed mb-6",
+                          children: [
+                            "Elaboração rigorosa de ",
+                            p.jsx("strong", { className: "text-white", children: "Estudos de Viabilidade Técnica e Econômica (EVTE)" }),
+                            " com modelagem probabilística de fluxo de caixa, análise de risco e apresentação executiva para comitês de crédito."
+                          ]
+                        })
+                      ]
+                    }),
+                    p.jsxs("ul", {
+                      className: "space-y-2.5 text-xs text-white/50 font-mono-tech border-t border-white/10 pt-5",
+                      children: [
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Modelagem de risco e sensibilidade"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Dossiê técnico para aprovação"] }),
+                        p.jsxs("li", { className: "flex items-center gap-2", children: [p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }), "Sustentação econômico-financeira"] })
+                      ]
+                    })
+                  ]
+                })
+              ]
+            })
+          ]
+        })
       })
     ]
   });

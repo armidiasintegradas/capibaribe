@@ -304,3 +304,254 @@
     padding: 10rem 3rem;
   }
 }
+
+/* ========================================================
+   FASE 4 — REDESIGN MINIMALISTA: MANIFESTO, ATUAÇÃO, FINANCE, CAPITAL
+   ======================================================== */
+
+.manifesto-section-refined {
+  position: relative;
+  background-color: #FBFBFC;
+  padding: 6rem 0;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+@media (min-width: 768px) {
+  .manifesto-section-refined {
+    padding: 8rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .manifesto-section-refined {
+    padding: 10rem 0;
+  }
+}
+
+.manifesto-top-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) {
+  .manifesto-top-meta {
+    margin-bottom: 5rem;
+  }
+}
+
+.manifesto-title-large {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(2rem, 3.8vw, 3.3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  color: #0F1A2E;
+}
+
+/* Áreas de Atuação Grid & Cards */
+.atuacao-section-refined {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #F1F5F9;
+}
+@media (min-width: 768px) {
+  .atuacao-section-refined {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.atuacao-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.atuacao-card:hover {
+  border-color: rgba(21, 151, 147, 0.5);
+  box-shadow: 0 12px 30px -10px rgba(15, 26, 46, 0.08);
+  transform: translateY(-2px);
+}
+
+.atuacao-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #F1F5F9;
+}
+.atuacao-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.atuacao-card:hover .atuacao-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.atuacao-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  background-color: rgba(15, 26, 46, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 2;
+}
+
+/* Finance Section */
+.finance-section-refined {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+@media (min-width: 768px) {
+  .finance-section-refined {
+    padding: 7rem 0;
+  }
+}
+
+.finance-card-arch {
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.finance-card-arch:hover {
+  border-color: rgba(21, 151, 147, 0.6);
+  box-shadow: 0 10px 25px -8px rgba(15, 26, 46, 0.06);
+  transform: translateY(-2px);
+}
+
+/* Capital Section Dark */
+.capital-section-refined {
+  padding: 6rem 0;
+  background-color: #0F1A2E;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) {
+  .capital-section-refined {
+    padding: 8rem 0;
+  }
+}
+
+.capital-col-dark {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.capital-col-dark:hover {
+  border-color: rgba(42, 187, 167, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Responsive Grid Helpers for Editorial & Sections */
+.manifesto-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 1024px) {
+  .manifesto-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+}
+
+.editorial-split-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1024px) {
+  .editorial-split-header {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+}
+
+.capital-split-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1024px) {
+  .capital-split-header {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+}
+
+.finance-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .finance-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .finance-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.capital-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .capital-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.atuacao-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+@media (min-width: 768px) {
+  .atuacao-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+

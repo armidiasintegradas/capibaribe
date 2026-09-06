@@ -15,9 +15,9 @@ export interface CompanyInfo {
 
 export const COMPANY_INFO: CompanyInfo = {
   fullName: "Capibaribe Consultoria",
-  phone: "+55 81 4002-8922",
-  phoneHref: "tel:+558140028922",
-  whatsapp: "https://wa.me/558140028922",
+  phone: "+55 81 97340-0191",
+  phoneHref: "tel:+5581973400191",
+  whatsapp: "https://wa.me/5581973400191",
   email: "contato@capibaribe.consultoria",
   address: "Recife, Pernambuco — Brasil",
   social: {

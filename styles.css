@@ -1553,6 +1553,19 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   overflow: hidden;
 }
 
+/* Forçar JetBrains Mono em todo o rodapé conforme solicitação do usuário */
+.footer-executive,
+.footer-executive * {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.footer-executive p {
+  font-size: 0.82rem !important;
+  line-height: 1.6 !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  letter-spacing: -0.01em !important;
+}
+
 .footer-ambient-glow {
   position: absolute;
   top: 0;
@@ -1576,18 +1589,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .footer-col-title {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
   text-transform: uppercase;
-  letter-spacing: 0.24em;
-  color: #159793;
+  letter-spacing: 0.22em !important;
+  color: #159793 !important;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .footer-link-item {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.02em !important;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
@@ -1595,7 +1610,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .footer-link-item:hover {
-  color: #159793;
+  color: #159793 !important;
   transform: translateX(3px);
 }
 
@@ -1624,21 +1639,181 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1.25rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.12em !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  line-height: 1.6;
 }
 
-@media (min-width: 768px) {
-  .footer-bottom-legal {
-    flex-direction: row;
+/* 6. Header Navbar Executive Contrast Fix on Scroll */
+.header-executive-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              -webkit-backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.header-executive-nav.not-scrolled {
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent !important;
+  box-shadow: none !important;
+  height: 6rem !important;
+}
+
+.header-executive-nav.is-scrolled {
+  background-color: rgba(7, 13, 24, 0.96) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7) !important;
+  height: 5rem !important;
+}
+
+/* 7. WhatsApp Button Executive Styling */
+.cta-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.75rem;
+  border-radius: 0.75rem;
+  background: rgba(37, 211, 102, 0.08);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #FFFFFF;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -4px rgba(37, 211, 102, 0.15);
+  text-decoration: none;
+}
+
+.cta-whatsapp-btn:hover {
+  background: rgba(37, 211, 102, 0.18);
+  border-color: rgba(37, 211, 102, 0.7);
+  box-shadow: 0 8px 30px -4px rgba(37, 211, 102, 0.3);
+  transform: translateY(-2px);
+}
+
+/* 8. Instagram Section (Executive Feed) */
+.instagram-executive-section {
+  position: relative;
+  background-color: #070D18;
+  color: #FFFFFF;
+  padding: 5.5rem 0 6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 1024px) {
+  .instagram-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+}
+
+.instagram-card {
+  position: relative;
+  display: block;
+  border-radius: 0.875rem;
+  overflow: hidden;
+  background: #0D1726;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  aspect-ratio: 1 / 1;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.instagram-card:hover {
+  border-color: #159793;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.6), 0 0 20px -4px rgba(21, 151, 147, 0.3);
+}
+
+.instagram-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.instagram-card:hover .instagram-card-img {
+  transform: scale(1.08);
+}
+
+.instagram-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 13, 24, 0.15) 0%, rgba(7, 13, 24, 0.9) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.875rem;
+  opacity: 0.95;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.instagram-card:hover .instagram-card-overlay {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(7, 13, 24, 0.3) 0%, rgba(7, 13, 24, 0.98) 100%);
+}
+
+.instagram-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  color: #2ABBA7;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.instagram-caption-preview {
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.85);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400;
+}
+
 
 
 

@@ -1820,3 +1820,60 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 
 
+
+
+/* ========================================================
+   PHASE 10 REFINEMENTS:
+   - Refined Executive Navbar Typography & Transitions
+   - Navbar Social Media Icons (LinkedIn & Instagram)
+   - Refined Telemetry Bar Micro-typography
+======================================================== */
+
+.nav-menu-link {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  color: rgba(255, 255, 255, 0.88);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.nav-menu-link:hover {
+  color: #2ABBA7;
+}
+
+.nav-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.nav-social-btn:hover {
+  background: rgba(42, 187, 167, 0.15);
+  border-color: rgba(42, 187, 167, 0.5);
+  color: #2ABBA7;
+  transform: translateY(-1px);
+}
+
+.cta-telemetry-bar {
+  padding: 0.65rem 1.15rem !important;
+}
+
+@media (min-width: 640px) {
+  .cta-telemetry-bar {
+    padding: 0.75rem 1.4rem !important;
+  }
+}

@@ -569,11 +569,11 @@ const megaMenu = {
     href: "#finance",
     items: [
       { label: "Estruturação Financeira", href: "#finance" },
-      { label: "Planejamento Financeiro", href: "#finance" },
-      { label: "BPO Financeiro", href: "#finance" },
-      { label: "FP&A", href: "#finance" },
-      { label: "Fluxo de Caixa", href: "#finance" },
-      { label: "Indicadores", href: "#finance" }
+      { label: "Planejamento Financeiro", href: "#finance-fpa" },
+      { label: "BPO Financeiro", href: "#finance-bpo" },
+      { label: "FP&A", href: "#finance-fpa" },
+      { label: "Fluxo de Caixa", href: "#finance-caixa" },
+      { label: "Indicadores", href: "#metodo" }
     ]
   },
   tax: {
@@ -581,20 +581,20 @@ const megaMenu = {
     href: "#tax",
     items: [
       { label: "Inteligência Tributária", href: "#tax" },
-      { label: "Planejamento Tributário", href: "#tax" },
-      { label: "Diagnóstico Fiscal", href: "#tax" },
-      { label: "Eficiência Tributária", href: "#tax" }
+      { label: "Planejamento Tributário", href: "#tax-planejamento" },
+      { label: "Diagnóstico Fiscal", href: "#tax-diagnostico" },
+      { label: "Eficiência Tributária", href: "#tax-eficiencia" }
     ]
   },
   capital: {
     title: "CAPITAL",
     href: "#capital",
     items: [
-      { label: "Captação de Recursos", href: "#capital" },
-      { label: "Funding", href: "#capital" },
-      { label: "Estruturação de Projetos", href: "#capital" },
-      { label: "Valuation", href: "#capital" },
-      { label: "Planos de Negócios", href: "#capital" }
+      { label: "Captação de Recursos", href: "#capital-funding" },
+      { label: "Funding", href: "#capital-funding" },
+      { label: "Estruturação de Projetos", href: "#capital-projetos" },
+      { label: "Valuation", href: "#finance-valuation" },
+      { label: "Planos de Negócios", href: "#capital-projetos" }
     ]
   }
 };
@@ -804,19 +804,19 @@ return p.jsxs(p.Fragment, {
                     p.jsxs("div", {
                       children: [
                         p.jsx("span", { className: "block font-mono text-[0.65rem] text-white/50 tracking-wider mb-1.5 uppercase", children: "Finance" }),
-                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.finance.items.slice(0, 3).map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
+                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.finance.items.map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
                       ]
                     }),
                     p.jsxs("div", {
                       children: [
                         p.jsx("span", { className: "block font-mono text-[0.65rem] text-white/50 tracking-wider mb-1.5 uppercase", children: "Tax" }),
-                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.tax.items.slice(0, 3).map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
+                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.tax.items.map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
                       ]
                     }),
                     p.jsxs("div", {
                       children: [
                         p.jsx("span", { className: "block font-mono text-[0.65rem] text-white/50 tracking-wider mb-1.5 uppercase", children: "Capital" }),
-                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.capital.items.slice(0, 3).map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
+                        p.jsx("div", { className: "space-y-1.5", children: megaMenu.capital.items.map(it => p.jsx("a", { key: it.label, href: it.href, onClick: () => setMobileMenuOpen(false), className: "block text-sm text-white/80 hover:text-brand-teal", children: it.label })) })
                       ]
                     })
                   ]
@@ -1562,7 +1562,7 @@ function lse(){
                       p.jsxs("div", {
                         className: "p-6 md:p-7 flex flex-col flex-1 justify-between relative",
                         children: [
-                          p.jsx("div", { id: "tax", className: "scroll-mt-28" }),
+                          p.jsx("div", { id: "atuacao-tax", className: "scroll-mt-28" }),
                           p.jsxs("div", {
                             children: [
                               p.jsx("h3", {
@@ -1583,10 +1583,10 @@ function lse(){
                                 children: "Conformidade & Valor"
                               }),
                               p.jsxs("a", {
-                                href: "#cases",
+                                href: "#tax",
                                 className: "font-semibold text-brand-teal group-hover:translate-x-1 transition-transform inline-flex items-center gap-1",
                                 children: [
-                                  "Ver casos práticos",
+                                  "Ver disciplina",
                                   p.jsx(za, { className: "w-3.5 h-3.5" })
                                 ]
                               })
@@ -1738,7 +1738,8 @@ function lse(){
               className: "finance-cards-grid",
               children: [
                 p.jsxs("div", {
-                  className: "finance-card-arch",
+                  id: "finance-caixa",
+                  className: "finance-card-arch scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1751,7 +1752,8 @@ function lse(){
                   ]
                 }),
                 p.jsxs("div", {
-                  className: "finance-card-arch",
+                  id: "finance-fpa",
+                  className: "finance-card-arch scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1764,7 +1766,8 @@ function lse(){
                   ]
                 }),
                 p.jsxs("div", {
-                  className: "finance-card-arch",
+                  id: "finance-bpo",
+                  className: "finance-card-arch scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1777,7 +1780,8 @@ function lse(){
                   ]
                 }),
                 p.jsxs("div", {
-                  className: "finance-card-arch",
+                  id: "finance-valuation",
+                  className: "finance-card-arch scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1787,6 +1791,146 @@ function lse(){
                       ]
                     }),
                     p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Visão de valor" })
+                  ]
+                })
+              ]
+            })
+          ]
+        })
+      }),
+
+      // 2.5 SEÇÃO TAX (DISCIPLINA 02)
+      p.jsx("section", {
+        id: "tax",
+        className: "tax-section-refined",
+        children: p.jsxs("div", {
+          className: "max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
+          children: [
+            // Top Meta
+            p.jsxs("div", {
+              className: "flex flex-wrap items-center justify-between gap-3 mb-8 pb-5 border-b border-slate-200/80",
+              children: [
+                p.jsxs("div", {
+                  className: "flex items-center gap-3",
+                  children: [
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs font-bold text-brand-navy bg-white border border-slate-200 px-3 py-1 rounded-md shadow-xs",
+                      children: "DISCIPLINA 02"
+                    }),
+                    p.jsx("span", {
+                      className: "font-mono-tech text-xs uppercase tracking-[0.25em] text-brand-teal font-semibold",
+                      children: "TAX & INTELIGÊNCIA TRIBUTÁRIA"
+                    })
+                  ]
+                }),
+                p.jsxs("a", {
+                  href: "#proximo-passo",
+                  className: "text-xs font-semibold uppercase tracking-wider text-brand-teal hover:text-brand-navy transition-colors inline-flex items-center gap-1.5",
+                  children: [
+                    "Solicitar diagnóstico fiscal",
+                    p.jsx(za, { className: "w-3 h-3" })
+                  ]
+                })
+              ]
+            }),
+            // Title & Context Grid
+            p.jsxs("div", {
+              className: "editorial-split-header",
+              children: [
+                p.jsxs("div", {
+                  children: [
+                    p.jsx("h3", {
+                      className: "text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-navy tracking-[-0.03em] leading-tight mb-6",
+                      children: "Segurança jurídica e engenharia fiscal para proteger margens e gerar liquidez."
+                    }),
+                    p.jsx("p", {
+                      className: "text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl",
+                      children: "Estruturamos estratégias tributárias preventivas de alto rigor: enquadramento em incentivos fiscais regionais (SUDENE e PRODEPE), recuperação legítima de créditos acumulados e preparação estratégica para a transição da Reforma Tributária (CBS/IBS)."
+                    })
+                  ]
+                }),
+                p.jsxs("div", {
+                  className: "bg-white border border-slate-200/90 rounded-2xl p-6 md:p-8 shadow-xs",
+                  children: [
+                    p.jsx("div", {
+                      className: "font-mono-tech text-[0.65rem] uppercase tracking-[0.25em] text-slate-400 mb-2 font-semibold",
+                      children: "PILAR DE CONFORMIDADE"
+                    }),
+                    p.jsx("p", {
+                      className: "text-brand-navy font-medium text-base mb-4 leading-snug",
+                      children: "Otimização sustentável da carga tributária sem riscos de autuação ou insegurança regulatória."
+                    }),
+                    p.jsxs("div", {
+                      className: "flex flex-wrap gap-2 text-xs text-slate-600 font-mono-tech",
+                      children: [
+                        p.jsx("span", { className: "px-2.5 py-1 bg-slate-50 border border-slate-200 rounded-md", children: "SUDENE (75% IRPJ)" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-slate-50 border border-slate-200 rounded-md", children: "PRODEPE (ICMS)" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-slate-50 border border-slate-200 rounded-md", children: "Recuperação de Créditos" }),
+                        p.jsx("span", { className: "px-2.5 py-1 bg-slate-50 border border-slate-200 rounded-md", children: "Impacto CBS / IBS" })
+                      ]
+                    })
+                  ]
+                })
+              ]
+            }),
+            // 4 Architectural Cards for Tax
+            p.jsxs("div", {
+              className: "finance-cards-grid",
+              children: [
+                p.jsxs("div", {
+                  id: "tax-planejamento",
+                  className: "finance-card-arch scroll-mt-28",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "02.1 // PLANEJAMENTO" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Planejamento Tributário" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Revisão e otimização estruturada da carga tributária, planejamento para expansões fabris, reorganizações societárias e modelagem para novos empreendimentos." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Elisão legítima" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  id: "tax-diagnostico",
+                  className: "finance-card-arch scroll-mt-28",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "02.2 // DIAGNÓSTICO" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Diagnóstico Fiscal & Créditos" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Diagnóstico analítico de balanços e obrigações acessórias (SPED), identificação de tributos recolhidos a maior e monetização administrativa de créditos." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Auditoria preventiva" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  id: "tax-eficiencia",
+                  className: "finance-card-arch scroll-mt-28",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "02.3 // EFICIÊNCIA" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Eficiência Tributária & Incentivos" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Habilitação em regimes fiscais diferenciados: redução de 75% do IRPJ pela SUDENE e crédito presumido de ICMS via PRODEPE com total segurança técnica." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Incentivos regionais" })
+                  ]
+                }),
+                p.jsxs("div", {
+                  id: "tax-inteligencia",
+                  className: "finance-card-arch scroll-mt-28",
+                  children: [
+                    p.jsxs("div", {
+                      children: [
+                        p.jsx("span", { className: "font-mono-tech text-xs text-brand-teal font-bold block mb-4", children: "02.4 // REFORMA & PERFORMANCE" }),
+                        p.jsx("h4", { className: "text-lg font-semibold text-brand-navy mb-2.5", children: "Inteligência Tributária & Reforma" }),
+                        p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed mb-6", children: "Estudos de impacto da Reforma Tributária (CBS, IBS e IS), benchmarking setorial da carga e modelagem locacional comparativa (Tax Location Intelligence)." })
+                      ]
+                    }),
+                    p.jsx("div", { className: "pt-4 border-t border-slate-100 text-[0.7rem] text-slate-400 font-mono-tech uppercase tracking-wider", children: "Visão regulatória futura" })
                   ]
                 })
               ]
@@ -1870,7 +2014,8 @@ function lse(){
               children: [
                 // Col 1
                 p.jsxs("div", {
-                  className: "capital-col-dark",
+                  id: "capital-funding",
+                  className: "capital-col-dark scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1905,7 +2050,8 @@ function lse(){
                 }),
                 // Col 2
                 p.jsxs("div", {
-                  className: "capital-col-dark",
+                  id: "capital-inovacao",
+                  className: "capital-col-dark scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [
@@ -1938,7 +2084,8 @@ function lse(){
                 }),
                 // Col 3
                 p.jsxs("div", {
-                  className: "capital-col-dark",
+                  id: "capital-projetos",
+                  className: "capital-col-dark scroll-mt-28",
                   children: [
                     p.jsxs("div", {
                       children: [

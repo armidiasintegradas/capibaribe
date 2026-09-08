@@ -1903,3 +1903,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     padding: 0.75rem 1.4rem !important;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+

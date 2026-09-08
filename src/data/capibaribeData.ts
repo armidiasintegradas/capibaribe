@@ -27,14 +27,13 @@ export const COMPANY_INFO: CompanyInfo = {
 };
 
 export const NAV_LINKS = [
-  { label: "Início", href: "/" },
-  { label: "Setor Privado", href: "/setor-privado" },
-  { label: "Setor Público", href: "/setor-publico" },
-  { label: "Simulador", href: "/simulador" },
-  { label: "Glossário", href: "/glossario" },
-  { label: "Blog", href: "/blog" },
-  { label: "Guias", href: "/guias" },
-  { label: "Contato", href: "/contato" }
+  { label: "Início", href: "#" },
+  { label: "Soluções", href: "#solucoes" },
+  { label: "Expertise", href: "#expertise" },
+  { label: "Cases", href: "#cases" },
+  { label: "Insights", href: "#insights" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Contato", href: "#proximo-passo" }
 ];
 
 export const SIMULATOR_REGIONS = [{id:"nordeste",name:"Nordeste (SUDENE)",factor:.375,states:["PE","CE","BA","RN","PB","AL","SE","PI","MA"]},{id:"norte",name:"Norte (SUDAM)",factor:.375,states:["PA","AM","AC","RO","RR","AP","TO"]},{id:"sudeste",name:"Sudeste",factor:0,states:["SP","RJ","MG","ES"]},{id:"sul",name:"Sul",factor:0,states:["PR","SC","RS"]},{id:"centro-oeste",name:"Centro-Oeste",factor:0,states:["GO","MT","MS","DF"]}];

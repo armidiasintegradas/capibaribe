@@ -21,7 +21,7 @@ export const COMPANY_INFO: CompanyInfo = {
   email: "contato@capibaribe.consultoria",
   address: "Recife, Pernambuco — Brasil",
   social: {
-    linkedin: "https://linkedin.com",
+    linkedin: "https://br.linkedin.com/company/capibaribe-consultoria-e-planejamento",
     instagram: "https://www.instagram.com/capibaribeconsultoria/"
   }
 };

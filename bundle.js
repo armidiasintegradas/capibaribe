@@ -568,8 +568,8 @@ const megaMenu = {
     title: "CAPIBARIBE",
     items: [
       { label: "Sobre a Consultoria", href: "#sobre" },
-      { label: "Pessoas & Liderança", href: "#pessoas" },
-      { label: "Nossa Abordagem", href: "#abordagem" }
+      { label: "Nossa Abordagem", href: "#abordagem" },
+      { label: "Para Quem Trabalhamos", href: "#para-quem" }
     ]
   },
   solucoes: {
@@ -3216,6 +3216,7 @@ function CtaFinalSection(){
 
 
 // ==========================================
+// ==========================================
 // FASE 3: COMPONENTES EDITORIAIS DA BOUTIQUE
 // ==========================================
 
@@ -3224,10 +3225,10 @@ function VisionManifestoSection() {
     id: "manifesto",
     className: "vision-section",
     children: p.jsxs("div", {
-      className: "max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16",
+      className: "site-container",
       children: [
         p.jsxs("div", {
-          className: "border-b border-slate-200 pb-5 mb-12 md:mb-16 flex items-center justify-between",
+          className: "border-b border-slate-200 pb-4 mb-8 md:mb-10 flex items-center justify-between",
           children: [
             p.jsxs("span", {
               className: "vision-tagline",
@@ -3243,7 +3244,7 @@ function VisionManifestoSection() {
           ]
         }),
         p.jsxs("div", {
-          className: "grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start",
+          className: "grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start",
           children: [
             p.jsx("div", {
               className: "lg:col-span-8",
@@ -3253,14 +3254,14 @@ function VisionManifestoSection() {
               })
             }),
             p.jsxs("div", {
-              className: "lg:col-span-4 lg:pt-2 space-y-6",
+              className: "lg:col-span-4 lg:pt-1 space-y-5",
               children: [
                 p.jsx("p", {
                   className: "vision-body",
                   children: "A Capibaribe combina estratégia, inteligência financeira e conhecimento empresarial para transformar complexidade em decisões mais claras, sustentáveis e eficientes."
                 }),
                 p.jsxs("div", {
-                  className: "pt-2 flex items-center gap-3 text-xs font-mono text-brand-teal tracking-wider uppercase",
+                  className: "pt-1 flex items-center gap-3 text-xs font-mono text-brand-teal tracking-wider uppercase font-semibold",
                   children: [
                     p.jsx("span", { className: "w-6 h-px bg-brand-teal" }),
                     "Pensamento antes da solução"
@@ -3300,7 +3301,7 @@ function SolucoesLayerSection() {
       id: "solucoes-tributaria",
       title: "Eficiência Tributária",
       target: "Para organizações que precisam:",
-      bullets: ["Revisar estrutura tributária", "Identificar oportunidades e créditos", "Reduzir riscos e aumentar conformidade", "Incentivos SUDENE / PRODEPE"],
+      bullets: ["Revisar estrutura tributária", "Identificar oportunidades e créditos", "Reduzir riscos e conformidade", "Incentivos SUDENE / PRODEPE"],
       anchor: "#tax",
       anchorText: "Ver inteligência tributária ➔"
     },
@@ -3320,10 +3321,10 @@ function SolucoesLayerSection() {
     className: "solucoes-editorial-section",
     children: [
       p.jsxs("div", {
-        className: "max-w-[1440px] mx-auto px-6 md:px-12 mb-12 md:mb-16",
+        className: "site-container mb-10 md:mb-12",
         children: [
           p.jsxs("div", {
-            className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold mb-3",
+            className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.22em] font-semibold mb-3",
             children: [
               p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
               "ARQUITETURA DE SOLUÇÕES"
@@ -3333,11 +3334,11 @@ function SolucoesLayerSection() {
             className: "flex flex-col lg:flex-row lg:items-end justify-between gap-6",
             children: [
               p.jsx("h2", {
-                className: "text-3xl md:text-5xl font-semibold text-brand-ink tracking-tight max-w-2xl",
+                className: "type-h2 text-brand-ink max-w-2xl",
                 children: "Soluções conectadas aos desafios reais da sua empresa."
               }),
               p.jsx("p", {
-                className: "text-slate-600 text-base md:text-lg max-w-md font-light",
+                className: "copy-prose text-slate-600 text-base md:text-lg font-light leading-relaxed",
                 children: "A Capibaribe não vende serviços isolados. Estruturamos caminhos estratégicos para viabilizar crescimento, proteger margens e organizar a gestão."
               })
             ]
@@ -3345,7 +3346,7 @@ function SolucoesLayerSection() {
         ]
       }),
       p.jsx("div", {
-        className: "max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+        className: "site-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
         children: solucoes.map(s => (
           p.jsxs("div", {
             key: s.num,
@@ -3355,20 +3356,20 @@ function SolucoesLayerSection() {
               p.jsxs("div", {
                 children: [
                   p.jsxs("div", {
-                    className: "flex items-center justify-between border-b border-slate-100 pb-4 mb-5",
+                    className: "flex items-center justify-between border-b border-slate-100 pb-3.5 mb-4",
                     children: [
                       p.jsx("span", { className: "font-mono text-xs font-semibold text-brand-teal", children: s.num }),
                       p.jsx("span", { className: "text-xs font-mono text-slate-400 uppercase tracking-widest", children: "SOLUÇÃO" })
                     ]
                   }),
-                  p.jsx("h3", { className: "text-xl font-semibold text-brand-ink mb-3 tracking-tight", children: s.title }),
-                  p.jsx("p", { className: "text-xs font-mono text-brand-teal uppercase tracking-wider mb-3", children: s.target }),
+                  p.jsx("h3", { className: "text-lg font-semibold text-brand-ink mb-2.5 tracking-tight", children: s.title }),
+                  p.jsx("p", { className: "text-[0.68rem] font-mono text-brand-teal uppercase tracking-wider mb-2.5 font-semibold", children: s.target }),
                   p.jsx("ul", {
-                    className: "space-y-2 mb-6 text-sm text-slate-600",
+                    className: "space-y-1.5 mb-5 text-sm text-slate-600",
                     children: s.bullets.map((b, i) => (
                       p.jsxs("li", {
                         key: i,
-                        className: "flex items-start gap-2",
+                        className: "flex items-start gap-2 text-[0.82rem] leading-snug",
                         children: [
                           p.jsx("span", { className: "text-brand-teal font-bold select-none", children: "•" }),
                           p.jsx("span", { children: b })
@@ -3380,7 +3381,7 @@ function SolucoesLayerSection() {
               }),
               p.jsxs("a", {
                 href: s.anchor,
-                className: "inline-flex items-center gap-2 text-xs font-semibold text-brand-navy group-hover:text-brand-teal transition-colors pt-4 border-t border-slate-100",
+                className: "inline-flex items-center gap-2 text-xs font-semibold text-brand-navy group-hover:text-brand-teal transition-colors pt-3.5 border-t border-slate-100",
                 children: [
                   p.jsx("span", { children: s.anchorText })
                 ]
@@ -3426,41 +3427,41 @@ function AbordagemSection() {
     className: "abordagem-section",
     children: [
       p.jsxs("div", {
-        className: "max-w-[1440px] mx-auto px-6 md:px-12 mb-16",
+        className: "site-container mb-10 md:mb-12",
         children: [
           p.jsxs("div", {
-            className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold mb-4",
+            className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.22em] font-semibold mb-3",
             children: [
               p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
               "NOSSA ABORDAGEM"
             ]
           }),
           p.jsx("h2", {
-            className: "text-3xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight max-w-3xl leading-tight",
+            className: "type-h2 text-white max-w-3xl",
             children: "Estratégia começa fazendo as perguntas certas."
           }),
           p.jsx("p", {
-            className: "text-white/70 text-base md:text-lg max-w-2xl mt-4 font-light leading-relaxed",
+            className: "copy-prose text-white/70 text-base md:text-lg mt-3 font-light leading-relaxed",
             children: "Nosso método assegura que nenhuma recomendação seja feita sem diagnóstico profundo e que nenhuma estratégia fique desassistida na execução."
           })
         ]
       }),
       p.jsx("div", {
-        className: "max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+        className: "site-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
         children: etapas.map(e => (
           p.jsxs("div", {
             key: e.num,
             className: "abordagem-step-card",
             children: [
               p.jsxs("div", {
-                className: "flex items-baseline justify-between border-b border-white/10 pb-4 mb-6",
+                className: "flex items-baseline justify-between border-b border-white/10 pb-3.5 mb-5",
                 children: [
-                  p.jsx("span", { className: "font-mono text-2xl font-bold text-brand-teal", children: e.num }),
-                  p.jsx("span", { className: "font-mono text-[0.68rem] tracking-widest text-white/40 uppercase", children: "ETAPA" })
+                  p.jsx("span", { className: "font-mono text-xl font-bold text-brand-teal", children: e.num }),
+                  p.jsx("span", { className: "font-mono text-[0.65rem] tracking-widest text-white/40 uppercase", children: "ETAPA" })
                 ]
               }),
-              p.jsx("h3", { className: "text-xl font-semibold text-white tracking-tight mb-2", children: e.title }),
-              p.jsx("p", { className: "text-xs font-mono text-brand-teal/90 uppercase tracking-wider mb-4 leading-relaxed", children: e.subtitle }),
+              p.jsx("h3", { className: "text-lg font-semibold text-white tracking-tight mb-1.5", children: e.title }),
+              p.jsx("p", { className: "text-xs font-mono text-brand-teal/90 uppercase tracking-wider mb-3 leading-relaxed", children: e.subtitle }),
               p.jsx("p", { className: "text-white/70 text-sm leading-relaxed font-light", children: e.desc })
             ]
           }, e.num)
@@ -3491,50 +3492,50 @@ function SobreRedesenhadoSection() {
 
   return p.jsx("section", {
     id: "sobre",
-    className: "py-20 md:py-28 bg-white border-b border-slate-200",
+    className: "sobre-editorial-section",
     children: p.jsxs("div", {
-      className: "max-w-[1440px] mx-auto px-6 md:px-12",
+      className: "site-container",
       children: [
         p.jsxs("div", {
-          className: "border-b border-slate-200 pb-5 mb-12 md:mb-16 flex items-center justify-between",
+          className: "border-b border-slate-200 pb-4 mb-8 md:mb-10 flex items-center justify-between",
           children: [
             p.jsxs("span", {
-              className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold",
+              className: "type-eyebrow text-brand-teal flex items-center gap-2",
               children: [
                 p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
-                "SOBRE A CAPIBARIBE"
+                "CAPIBARIBE / CONSULTORIA"
               ]
             }),
             p.jsx("span", {
               className: "font-mono text-xs text-slate-400 uppercase tracking-widest hidden md:inline",
-              children: "SEDE: RECIFE, PE • ALCANCE NACIONAL"
+              children: "SEDE: RECIFE, PE • ATUAÇÃO NACIONAL"
             })
           ]
         }),
         p.jsxs("div", {
-          className: "editorial-grid-7-5 mb-16 md:mb-20",
+          className: "editorial-grid-7-5 mb-10 md:mb-12",
           children: [
             p.jsxs("div", {
-              className: "space-y-6",
+              className: "space-y-4",
               children: [
                 p.jsx("h2", {
-                  className: "text-3xl md:text-5xl font-semibold text-brand-ink tracking-tight leading-tight",
-                  children: "Conhecimento para transformar complexidade em direção."
+                  className: "type-h2 text-brand-ink leading-tight",
+                  children: "Conhecemos os números. Entendemos o negócio."
                 }),
                 p.jsx("p", {
-                  className: "text-slate-600 text-base md:text-lg font-light leading-relaxed",
-                  children: "A Capibaribe é uma boutique de estratégia, finanças e gestão corporativa. Combinamos visão econômica de longo prazo, governança de caixa e eficiência tributária para apoiar empresas e grupos investidores em seus momentos de maior desafio e oportunidade."
+                  className: "copy-prose text-slate-600 text-base md:text-lg font-light leading-relaxed",
+                  children: "A Capibaribe é uma boutique de estratégia, finanças e governança corporativa. Combinamos visão econômica de longo prazo, governança de caixa e eficiência tributária para apoiar empresas e grupos investidores em seus momentos de maior desafio e oportunidade."
                 }),
                 p.jsx("p", {
-                  className: "text-slate-600 text-base md:text-lg font-light leading-relaxed",
-                  children: "Não acreditamos em fórmulas pré-fabricadas. Cada projeto é conduzido com profundidade técnica, proximidade humana e compromisso absoluto com a perenidade dos resultados."
+                  className: "copy-prose text-slate-600 text-base md:text-lg font-light leading-relaxed",
+                  children: "Não acreditamos em fórmulas pré-fabricadas. Conduzimos cada projeto com profundidade analítica, proximidade humana e compromisso absoluto com a perenidade dos resultados."
                 })
               ]
             }),
             p.jsx("div", {
-              className: "w-full",
+              className: "w-full flex justify-center",
               children: p.jsxs("div", {
-                className: "rounded-2xl overflow-hidden shadow-xl border border-slate-200 relative aspect-[4/3] w-full",
+                className: "rounded-2xl overflow-hidden shadow-lg border border-slate-200 relative aspect-[4/3] w-full max-w-[420px] max-h-[360px]",
                 children: [
                   p.jsx("img", {
                     src: "images/c05510da3_generated_image.png",
@@ -3549,20 +3550,20 @@ function SobreRedesenhadoSection() {
         }),
         // 3 Princípios Fundamentais
         p.jsx("div", {
-          className: "grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-slate-100",
+          className: "grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-slate-100",
           children: principios.map(pItem => (
             p.jsxs("div", {
               key: pItem.num,
-              className: "space-y-3",
+              className: "space-y-2",
               children: [
                 p.jsxs("div", {
-                  className: "font-mono text-sm font-semibold text-brand-teal flex items-center gap-2",
+                  className: "font-mono text-xs font-semibold text-brand-teal flex items-center gap-2",
                   children: [
                     p.jsx("span", { children: pItem.num }),
-                    p.jsx("span", { className: "w-8 h-px bg-brand-teal/40" })
+                    p.jsx("span", { className: "w-6 h-px bg-brand-teal/40" })
                   ]
                 }),
-                p.jsx("h3", { className: "text-lg font-semibold text-brand-ink tracking-tight", children: pItem.title }),
+                p.jsx("h3", { className: "text-base font-semibold text-brand-ink tracking-tight", children: pItem.title }),
                 p.jsx("p", { className: "text-slate-600 text-sm leading-relaxed font-light", children: pItem.desc })
               ]
             }, pItem.num)
@@ -3578,13 +3579,13 @@ function PessoasSection() {
     id: "pessoas",
     className: "pessoas-section",
     children: p.jsxs("div", {
-      className: "max-w-[1440px] mx-auto px-6 md:px-12",
+      className: "site-container",
       children: [
         p.jsxs("div", {
-          className: "border-b border-slate-200 pb-5 mb-12 md:mb-16 flex items-center justify-between",
+          className: "border-b border-slate-200 pb-4 mb-8 md:mb-10 flex items-center justify-between",
           children: [
             p.jsxs("span", {
-              className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold",
+              className: "type-eyebrow text-brand-teal flex items-center gap-2",
               children: [
                 p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
                 "LIDERANÇA & PROXIMIDADE EXECUTIVA"
@@ -3613,24 +3614,24 @@ function PessoasSection() {
             }),
             // Right: Bio Executiva & Especialidades
             p.jsxs("div", {
-              className: "space-y-6 lg:pl-4",
+              className: "space-y-5 lg:pl-4",
               children: [
                 p.jsxs("div", {
                   children: [
-                    p.jsx("h2", { className: "text-3xl md:text-4xl font-bold text-brand-ink tracking-tight", children: "JULIANA BRITO" }),
+                    p.jsx("h2", { className: "type-h2 text-brand-ink tracking-tight", children: "JULIANA BRITO" }),
                     p.jsx("p", { className: "font-mono text-sm text-brand-teal font-medium mt-1 uppercase tracking-wider", children: "Estratégia • Gestão • Finanças" })
                   ]
                 }),
                 p.jsx("p", {
-                  className: "text-slate-600 text-base md:text-lg font-light leading-relaxed",
+                  className: "copy-prose text-slate-600 text-base md:text-lg font-light leading-relaxed",
                   children: "Com sólida trajetória na assessoria a grupos empresariais e lideranças, atua no desenho de estratégias de expansão, governança corporativa e estruturação financeira. Sua abordagem une escuta atenta, disciplina analítica e compromisso prático com a viabilidade econômica de cada decisão."
                 }),
                 p.jsxs("div", {
-                  className: "pt-4 border-t border-slate-200",
+                  className: "pt-3 border-t border-slate-200",
                   children: [
-                    p.jsx("h4", { className: "font-mono text-xs uppercase tracking-wider text-slate-400 mb-3 font-semibold", children: "EXPERTISE TÉCNICA" }),
+                    p.jsx("h4", { className: "font-mono text-[0.68rem] uppercase tracking-wider text-slate-400 mb-2.5 font-semibold", children: "EXPERTISE TÉCNICA" }),
                     p.jsxs("div", {
-                      className: "flex flex-wrap gap-2.5",
+                      className: "flex flex-wrap gap-2",
                       children: [
                         "Planejamento Estratégico",
                         "Gestão Financeira & Controladoria",
@@ -3639,7 +3640,7 @@ function PessoasSection() {
                       ].map((spec, i) => (
                         p.jsx("span", {
                           key: i,
-                          className: "px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-mono border border-slate-200/80",
+                          className: "px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-mono border border-slate-200/80",
                           children: spec
                         }, i)
                       ))
@@ -3647,13 +3648,13 @@ function PessoasSection() {
                   ]
                 }),
                 p.jsxs("div", {
-                  className: "pt-4",
+                  className: "pt-2",
                   children: [
                     p.jsxs("a", {
                       href: "https://br.linkedin.com/company/capibaribe-consultoria-e-planejamento",
                       target: "_blank",
                       rel: "noopener noreferrer",
-                      className: "inline-flex items-center gap-2.5 text-xs font-semibold text-brand-navy hover:text-brand-teal transition-colors font-mono uppercase tracking-wider",
+                      className: "inline-flex items-center gap-2 text-xs font-semibold text-brand-navy hover:text-brand-teal transition-colors font-mono uppercase tracking-wider",
                       children: [
                         p.jsx(VG, { className: "w-4 h-4 text-brand-teal" }),
                         p.jsx("span", { children: "Conectar no LinkedIn da Consultoria ↗" })
@@ -3702,24 +3703,24 @@ function ParaQuemTrabalhamosSection() {
     id: "para-quem",
     className: "para-quem-section",
     children: p.jsxs("div", {
-      className: "max-w-[1440px] mx-auto px-6 md:px-12",
+      className: "site-container",
       children: [
         p.jsxs("div", {
-          className: "mb-12 md:mb-16",
+          className: "mb-8 md:mb-10",
           children: [
             p.jsxs("div", {
-              className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold mb-3",
+              className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.22em] font-semibold mb-3",
               children: [
                 p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
                 "PERFIL DE ATUAÇÃO"
               ]
             }),
             p.jsx("h2", {
-              className: "text-3xl md:text-5xl font-semibold text-brand-ink tracking-tight max-w-3xl leading-tight",
+              className: "type-h2 text-brand-ink max-w-3xl",
               children: "Diferentes negócios. Desafios que exigem decisões melhores."
             }),
             p.jsx("p", {
-              className: "text-slate-600 text-base md:text-lg max-w-2xl mt-4 font-light leading-relaxed",
+              className: "copy-prose text-slate-600 text-base md:text-lg mt-3 font-light leading-relaxed",
               children: "Nossa atuação é talhada para lideranças que buscam profundidade analítica, confidencialidade e segurança na condução de seus negócios."
             })
           ]
@@ -3732,13 +3733,13 @@ function ParaQuemTrabalhamosSection() {
               className: "para-quem-card",
               children: [
                 p.jsxs("div", {
-                  className: "flex items-center gap-2.5 text-xs font-mono text-brand-teal font-semibold mb-3",
+                  className: "flex items-center gap-2 text-xs font-mono text-brand-teal font-semibold mb-2.5",
                   children: [
                     p.jsx("span", { className: "w-1.5 h-1.5 rounded-full bg-brand-teal" }),
                     p.jsx("span", { children: "0" + (idx + 1) + " // SEGMENTO" })
                   ]
                 }),
-                p.jsx("h3", { className: "text-xl font-semibold text-brand-ink mb-3 tracking-tight", children: item.title }),
+                p.jsx("h3", { className: "text-lg font-semibold text-brand-ink mb-2 tracking-tight", children: item.title }),
                 p.jsx("p", { className: "text-slate-600 text-sm font-light leading-relaxed", children: item.desc })
               ]
             }, idx)
@@ -3754,31 +3755,31 @@ function RecifeIdentidadeSection() {
     id: "recife",
     className: "recife-section",
     children: p.jsxs("div", {
-      className: "max-w-[1440px] mx-auto px-6 md:px-12",
+      className: "site-container",
       children: [
         p.jsxs("div", {
           className: "editorial-grid-7-5",
           children: [
             p.jsxs("div", {
-              className: "space-y-6",
+              className: "space-y-4",
               children: [
                 p.jsxs("div", {
-                  className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.25em] font-semibold",
+                  className: "inline-flex items-center gap-2.5 font-mono text-[0.72rem] text-brand-teal uppercase tracking-[0.22em] font-semibold",
                   children: [
                     p.jsx("span", { className: "w-2 h-2 rounded-full bg-brand-teal" }),
                     "RECIFE / PERNAMBUCO"
                   ]
                 }),
                 p.jsx("h2", {
-                  className: "text-3xl md:text-5xl font-semibold text-white tracking-tight leading-tight",
+                  className: "type-h2 text-white leading-tight",
                   children: "Estratégia com raízes locais e visão para além das margens."
                 }),
                 p.jsx("p", {
-                  className: "text-white/75 text-base md:text-lg font-light leading-relaxed",
+                  className: "copy-prose text-white/75 text-base md:text-lg font-light leading-relaxed",
                   children: "O Rio Capibaribe é mais que nossa inspiração nominal: é o símbolo da engenharia e da vocação que conecta diferentes margens. É com essa mesma precisão que unimos o conhecimento profundo da realidade econômica do Norte e Nordeste às exigências de governança e liquidez dos mercados nacionais."
                 }),
                 p.jsxs("div", {
-                  className: "pt-4 flex items-center gap-6 font-mono text-xs text-white/50",
+                  className: "pt-3 flex items-center gap-6 font-mono text-xs text-white/50",
                   children: [
                     p.jsxs("div", { children: [p.jsx("span", { className: "text-brand-teal font-semibold", children: "COORDENADAS: " }), "08° 03′ 14″ S / 34° 52′ 52″ W"] }),
                     p.jsxs("div", { children: [p.jsx("span", { className: "text-brand-teal font-semibold", children: "SEDE: " }), "RECIFE, PE"] })
@@ -3787,9 +3788,9 @@ function RecifeIdentidadeSection() {
               ]
             }),
             p.jsx("div", {
-              className: "w-full",
+              className: "w-full flex justify-center",
               children: p.jsxs("div", {
-                className: "rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative aspect-[4/3] w-full",
+                className: "rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative aspect-[4/3] w-full max-w-[420px] max-h-[360px]",
                 children: [
                   p.jsx("img", {
                     src: "images/recife_capibaribe.jpg",
@@ -3821,7 +3822,7 @@ function cse(){
       if (metaDesc && prevDesc) metaDesc.setAttribute("content", prevDesc);
     };
   }, []);
-  return p.jsxs(p.Fragment,{children:[p.jsx(Xoe,{}),p.jsx(VisionManifestoSection,{}),p.jsx(SolucoesLayerSection,{}),p.jsx(SolucoesChapters,{}),p.jsx(AbordagemSection,{}),p.jsx(SobreRedesenhadoSection,{}),p.jsx(ExpertiseSection,{}),p.jsx(CasesSection,{}),p.jsx(PessoasSection,{}),p.jsx(ParaQuemTrabalhamosSection,{}),p.jsx(InsightsSection,{}),p.jsx(RecifeIdentidadeSection,{}),p.jsx(lse,{}),p.jsx(CtaFinalSection,{})]});
+  return p.jsxs(p.Fragment,{children:[p.jsx(Xoe,{}),p.jsx(VisionManifestoSection,{}),p.jsx(SolucoesLayerSection,{}),p.jsx(SolucoesChapters,{}),p.jsx(AbordagemSection,{}),p.jsx(SobreRedesenhadoSection,{}),p.jsx(CasesSection,{}),p.jsx(ParaQuemTrabalhamosSection,{}),p.jsx(InsightsSection,{}),p.jsx(RecifeIdentidadeSection,{}),p.jsx(lse,{}),p.jsx(CtaFinalSection,{})]});
 }function es({eyebrow:e,title:t,description:n,image:r,children:i}){return p.jsxs("section",{className:"relative pt-28 md:pt-36 pb-14 md:pb-20 bg-brand-ink overflow-hidden",children:[r&&p.jsx("img",{src:r,alt:"",className:"absolute inset-0 w-full h-full object-cover opacity-20"}),p.jsx("div",{className:"absolute inset-0 bg-gradient-to-b from-brand-ink/70 via-brand-ink/85 to-brand-ink"}),p.jsx("div",{className:"absolute inset-0 opacity-[0.06]",style:{backgroundImage:"linear-gradient(#2ABBA7 1px, transparent 1px), linear-gradient(90deg, #2ABBA7 1px, transparent 1px)",backgroundSize:"48px 48px"}}),p.jsxs("div",{className:"relative max-w-7xl mx-auto px-4 md:px-8",children:[p.jsx(Xa,{eyebrow:e,title:t,description:n,light:!0}),i]})]})}function use(){
 const areasDetailed = [
   {

@@ -40,7 +40,7 @@
   top: calc(100% + 12px);
   left: 50%;
   transform: translateX(-50%);
-  width: 820px;
+  width: 980px;
   max-width: calc(100vw - 32px);
   background-color: rgba(11, 19, 34, 0.98);
   backdrop-filter: blur(24px);
@@ -1939,4 +1939,258 @@ html {
   }
 }
 
+
+
+
+/* ========================================================
+   FASE 3: BOUTIQUE EDITORIAL — ESTRATÉGIA, FINANÇAS & GESTÃO
+   ======================================================== */
+
+/* 1. Vision & Manifesto Editorial */
+.vision-section {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 7rem 0 8rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+@media (min-width: 768px) {
+  .vision-section {
+    padding: 9rem 0 10rem;
+  }
+}
+.vision-tagline {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #159793;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.vision-headline {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(2.1rem, 4.2vw, 3.6rem);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  color: #070D18;
+}
+.vision-body {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.7;
+  color: #475569;
+  font-weight: 300;
+}
+
+/* 2. Soluções Estratégicas (Camada Superior Editorial) */
+.solucoes-editorial-section {
+  background-color: #F8FAFC;
+  padding: 6rem 0 7rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+@media (min-width: 768px) {
+  .solucoes-editorial-section {
+    padding: 8rem 0 9rem;
+  }
+}
+.solucao-row-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1.25rem;
+  padding: 2.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.solucao-row-card:hover {
+  border-color: rgba(21, 151, 147, 0.6);
+  box-shadow: 0 20px 40px -15px rgba(7, 13, 24, 0.08);
+  transform: translateY(-3px);
+}
+
+/* 3. Abordagem Capibaribe */
+.abordagem-section {
+  background-color: #070D18;
+  color: #FFFFFF;
+  padding: 7rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .abordagem-section {
+    padding: 9rem 0 10rem;
+  }
+}
+.abordagem-step-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2.25rem 1.75rem;
+  transition: all 0.3s ease;
+}
+.abordagem-step-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(21, 151, 147, 0.5);
+}
+
+/* 4. Pessoas & Liderança Executiva */
+.pessoas-section {
+  background-color: #FFFFFF;
+  padding: 7rem 0 8rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+@media (min-width: 768px) {
+  .pessoas-section {
+    padding: 9rem 0 10rem;
+  }
+}
+.pessoa-portrait-wrapper {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(7, 13, 24, 0.15);
+  background-color: #F1F5F9;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.pessoa-portrait-wrapper img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* 5. Para Quem Trabalhamos */
+.para-quem-section {
+  background-color: #F8FAFC;
+  padding: 7rem 0 8rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+@media (min-width: 768px) {
+  .para-quem-section {
+    padding: 9rem 0 10rem;
+  }
+}
+.para-quem-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  padding: 2rem 1.75rem;
+  transition: all 0.3s ease;
+}
+.para-quem-card:hover {
+  border-color: rgba(21, 151, 147, 0.5);
+  box-shadow: 0 12px 28px -10px rgba(7, 13, 24, 0.06);
+  transform: translateY(-2px);
+}
+
+/* 6. Identidade Recife */
+.recife-section {
+  background-color: #0A1128;
+  color: #FFFFFF;
+  padding: 7rem 0 8rem;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .recife-section {
+    padding: 9rem 0 10rem;
+  }
+}
+
+/* 7. Megamenu 3 Colunas + Bloco Lateral */
+.megamenu-3col-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(7, 13, 24, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(21, 151, 147, 0.3);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  padding: 2.5rem 0;
+  animation: fadeInDown 0.25s ease-out;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.megamenu-phase3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1.15fr 1.55fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+.megamenu-side-editorial {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  padding-left: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.megamenu-side-editorial a {
+  white-space: nowrap;
+  font-size: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+/* ===================================================
+   FASE 3: GRIDS EDITORIAIS ROBUSTOS (DESKTOP & MOBILE)
+   =================================================== */
+
+@media (min-width: 1024px) {
+  .lg\:col-span-5 { grid-column: span 5 / span 5; }
+  .lg\:col-span-6 { grid-column: span 6 / span 6; }
+  .lg\:col-span-7 { grid-column: span 7 / span 7; }
+}
+
+.editorial-grid-7-5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .editorial-grid-7-5 {
+    grid-template-columns: 1.35fr 0.95fr;
+    gap: 4.5rem;
+  }
+}
+
+.editorial-grid-5-7 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .editorial-grid-5-7 {
+    grid-template-columns: 0.85fr 1.35fr;
+    gap: 4.5rem;
+  }
+}
+
+.editorial-grid-8-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .editorial-grid-8-4 {
+    grid-template-columns: 1.4fr 0.85fr;
+    gap: 4.5rem;
+  }
+}
 
